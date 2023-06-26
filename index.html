@@ -9,8 +9,8 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">
 
     <!-- esStrap core CSS -->
-    <link href="dist/css/esstrap-full.css" rel="stylesheet">
-    <link href="styles/styles.css" rel="stylesheet">
+    <link href="./dist/css/esstrap-full.min.css" rel="stylesheet">
+    <link href="./assets/styles/styles.css" rel="stylesheet">
 </head>
 
 
@@ -35,15 +35,15 @@
                             </li>
                           </ul>    -->
                             <nav class="d-flex justify-content-around">
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <div class="nav nav-tabs p-3" id="nav-tab" role="tablist">
                                     <button class="nav-link active" id="nav-home-tab" data-esbs-toggle="tab"
                                         data-esbs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
                                         aria-selected="true">Strona główna</button>
-                                        <div class="es-dot"></div>
+                                    <div class="es-dot"></div>
                                     <button class="nav-link" id="nav-profile-tab" data-esbs-toggle="tab"
                                         data-esbs-target="#nav-profile" type="button" role="tab"
                                         aria-controls="nav-profile" aria-selected="false">Strefa finish</button>
-                                        <div class="es-dot"></div>
+                                    <div class="es-dot"></div>
                                     <button class="nav-link" id="nav-contact-tab" data-esbs-toggle="tab"
                                         data-esbs-target="#nav-contact" type="button" role="tab"
                                         aria-controls="nav-contact" aria-selected="false">Strefa prania</button>
@@ -53,7 +53,50 @@
                                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                                     aria-labelledby="nav-home-tab">zawartosc dla strony głównej</div>
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel"
-                                    aria-labelledby="nav-profile-tab">...</div>
+                                    aria-labelledby="nav-profile-tab">
+                                    <section class="container-fluid p-5 es-finish--1">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row">
+                                                  <img class="img-fluid mx-auto es-finish--1__logo" src="./assets/images/finish-logo.webp">  
+                                                </div>
+                                                <div class="row">
+                                                  <h2 class="es-tab2__header es-header-gradient">
+                                                    <strong>perfekcyjne rezultaty</strong> zmywania
+                                                </h2>  
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col">
+                                                <img class="img-fluid es-finish--1__pack" src="./assets/images/finish-packshots.webp">
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    <section class="container-fluid p-4 es-finish--2">
+                                        <div class="row d-flex flex-row align-items-center justify-content-around gap-4">
+                                            <div class="col d-flex flex-column align-items-center justify-content-around p-2 es-finish--2__single">
+                                                <img class="img-fluid p-1 es-finish--2__img" src="./assets/images/item-finish-kapsulki.webp">
+                                                <p class="text-center es-header-gradient">kapsułki</p>
+                                            </div>
+                                            <div class="col d-flex flex-column align-items-center justify-content-around p-2 es-finish--2__single">
+                                                <img class="img-fluid p-1 es-finish--2__img" src="./assets/images/item-finish-dodatki.webp">
+                                                <p class="text-center es-header-gradient">dodatki</p>
+                                            </div>
+                                            <div class="col d-flex flex-column align-items-center justify-content-around p-2 es-finish--2__single">
+                                                <img class="img-fluid p-1 es-finish--2__img" src="./assets/images/item-finish-zestawy.webp">
+                                                <p class="text-center es-header-gradient">zestawy</p>
+                                            </div>
+                                            <div class="col d-flex flex-column align-items-center justify-content-around p-2 es-finish--2__single">
+                                                <img class="img-fluid p-1 es-finish--2__img" src="./assets/images/item-finish-duze-opakowania.webp">
+                                                <p class="text-center es-header-gradient">duże opakowania</p>
+                                            </div>
+
+                                        </div>
+                                    </section>
+
+
+                                </div>
                                 <div class="tab-pane fade" id="nav-contact" role="tabpanel"
                                     aria-labelledby="nav-contact-tab">...</div>
                             </div>

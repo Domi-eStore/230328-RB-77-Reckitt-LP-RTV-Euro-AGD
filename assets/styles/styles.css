@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Metropolis-Black";
+  src: url("../fonts/Metropolis-Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham-Black";
+  src: url("../fonts/Gotham-Black.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("../fonts/Gotham-Book.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+#es-rc #es-rc-content [data-es-rc] {
+  font-family: "Metropolis-Black";
+  color: #0f2d5a;
+}
+#es-rc #es-rc-content [data-es-rc] .es-dot {
+  height: 8px;
+  width: 8px;
+  background-color: #0f2d5a;
+  border-radius: 50%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-self: center;
+}
+#es-rc #es-rc-content [data-es-rc] .es-header-gradient {
+  text-transform: uppercase;
+  background: rgb(224, 198, 140);
+  background: linear-gradient(142deg, rgb(224, 198, 140) 0%, rgb(242, 231, 180) 47%, rgb(201, 176, 117) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0c68c", endColorstr="#c9b075", GradientType=1);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+#es-rc #es-rc-content [data-es-rc] .img-thumbnail {
+  border: none;
+  background-color: unset;
+}
+#es-rc #es-rc-content [data-es-rc] .nav-tabs {
+  border-bottom: none;
+  gap: 10px;
+}
+#es-rc #es-rc-content [data-es-rc] .nav-tabs .nav-link {
+  text-transform: uppercase;
+  font-family: "Metropolis-Black";
+  color: #0f2d5a;
+  border: none;
+  padding-inline: 0;
+}
+#es-rc #es-rc-content [data-es-rc] .nav-tabs .nav-link.active {
+  border-bottom: 4px solid #ff0000;
+  color: #ff0000;
+}
+#es-rc #es-rc-content [data-es-rc] .es-tab2__header {
+  font-family: "Gotham-Book";
+  text-transform: uppercase;
+}
+#es-rc #es-rc-content [data-es-rc] .es-tab2__header strong {
+  font-family: "Gotham-Black";
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--1 {
+  background-image: url("../images/bg-finish.webp");
+  background-size: cover;
+  background-position: center;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--1__logo {
+  max-height: 100px;
+  width: auto;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--1__pack {
+  scale: 1;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--1__pack:hover {
+  scale: 1.1;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--2__single {
+  background-image: url("../images/bg-item-finish.webp");
+  background-size: cover;
+  background-position: center;
+  max-width: 150px;
+  height: 150px;
+  aspect-ratio: 1;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--2__single p {
+  margin-bottom: unset;
+  font-size: 0.75rem;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--2__img {
+  max-width: 100px;
+  max-height: 100px;
+  scale: 1;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--2__img:hover {
+  scale: 1.1;
+}/*# sourceMappingURL=styles.css.map */

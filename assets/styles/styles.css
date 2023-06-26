@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 @font-face {
   font-family: "Metropolis-Black";
   src: url("../fonts/Metropolis-Black.otf") format("opentype");
@@ -44,6 +45,28 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+#es-rc #es-rc-content [data-es-rc] .es-sup {
+  font-size: 0.6em;
+}
+#es-rc #es-rc-content [data-es-rc] .es-carousel__slide {
+  max-width: 80%;
+  margin: auto;
+}
+#es-rc #es-rc-content [data-es-rc] .es-carousel__btn {
+  background-color: #e0c68c;
+  border-radius: 50%;
+  background-image: none;
+  background-size: 25%;
+  background-position-y: center;
+}
+#es-rc #es-rc-content [data-es-rc] .es-carousel__btn--prev {
+  background-image: url(../images/btn-prev.webp);
+  background-position-x: 40%;
+}
+#es-rc #es-rc-content [data-es-rc] .es-carousel__btn--next {
+  background-image: url(../images/btn-next.webp);
+  background-position-x: 55%;
+}
 #es-rc #es-rc-content [data-es-rc] .img-thumbnail {
   border: none;
   background-color: unset;
@@ -62,6 +85,9 @@
 #es-rc #es-rc-content [data-es-rc] .nav-tabs .nav-link.active {
   border-bottom: 4px solid #ff0000;
   color: #ff0000;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--tab {
+  background-color: #0a1f41;
 }
 #es-rc #es-rc-content [data-es-rc] .es-tab2__header {
   font-family: "Gotham-Book";
@@ -106,4 +132,41 @@
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--2__img:hover {
   scale: 1.1;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--3__header {
+  font-family: "Gotham-Book";
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--3__header strong {
+  font-family: "Gotham-Black";
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--3__single {
+  width: 25%;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--3__packshotCtn {
+  position: relative;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--3__packshot {
+  scale: 1;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--3__packshot:hover {
+  scale: 1.1;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--3__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 60%;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--3__badge--circle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 90%;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--3__icon {
+  height: 80px;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--3__text {
+  font-family: "Open Sans", sans-serif;
 }/*# sourceMappingURL=styles.css.map */

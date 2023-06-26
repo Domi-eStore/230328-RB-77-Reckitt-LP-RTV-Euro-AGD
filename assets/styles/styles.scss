@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @font-face {
     font-family: 'Metropolis-Black';
     src: url("../fonts/Metropolis-Black.otf") format("opentype");
@@ -24,6 +25,7 @@
 $es-color-red: #ff0000;
 $es-color-navy: #0f2d5a;
 $es-color-navy--bg: #0a1f41;
+$es-color-gold: #e0c68c;
 
 #es-rc #es-rc-content [data-es-rc] {
     font-family: "Metropolis-Black";
@@ -38,6 +40,7 @@ $es-color-navy--bg: #0a1f41;
         flex-wrap: wrap;
         align-self: center;
     }
+
     .es-header-gradient {
         text-transform: uppercase;
         background: rgb(224, 198, 140);
@@ -53,6 +56,36 @@ $es-color-navy--bg: #0a1f41;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
     }
+    .es-sup {
+        font-size: 0.6em;
+    }
+
+    .es-carousel {
+        &__slide {
+            max-width: 80%;
+            margin: auto;
+        }
+        &__btn {
+            background-color: $es-color-gold;
+            border-radius: 50%;
+            background-image: none;
+            background-size: 25%;
+            background-position-y: center;
+
+            &--prev {
+                background-image: url(../images/btn-prev.webp);
+                background-position-x: 40%;
+            }
+
+            &--next {
+                background-image: url(../images/btn-next.webp);
+                background-position-x: 55%;
+            }
+        }
+
+    }
+
+
 
     .img-thumbnail {
         border: none;
@@ -62,6 +95,7 @@ $es-color-navy--bg: #0a1f41;
     .nav-tabs {
         border-bottom: none;
         gap: 10px;
+
         .nav-link {
             text-transform: uppercase;
             font-family: 'Metropolis-Black';
@@ -77,32 +111,42 @@ $es-color-navy--bg: #0a1f41;
         }
     }
 
+    .es-finish--tab {
+        background-color: $es-color-navy--bg;
+    }
+
     .es-tab2 {
         &__header {
             font-family: "Gotham-Book";
             text-transform: uppercase;
+
             strong {
                 font-family: "Gotham-Black";
             }
         }
-        
+
     }
+
     .es-finish--1 {
-            background-image: url("../images/bg-finish.webp");
-            background-size: cover;
-            background-position: center;
-            &__logo {
-                max-height: 100px;
-                width: auto;
-            }
-            &__pack {
-                scale: 1;
-                transition: all 200ms ease-in-out;
-                &:hover {
-                    scale: 1.1;
-                }
+        background-image: url("../images/bg-finish.webp");
+        background-size: cover;
+        background-position: center;
+
+        &__logo {
+            max-height: 100px;
+            width: auto;
+        }
+
+        &__pack {
+            scale: 1;
+            transition: all 200ms ease-in-out;
+
+            &:hover {
+                scale: 1.1;
             }
         }
+    }
+
     .es-finish--2 {
         &__single {
             background-image: url("../images/bg-item-finish.webp");
@@ -111,19 +155,64 @@ $es-color-navy--bg: #0a1f41;
             max-width: 130px;
             height: 130px;
             aspect-ratio: 1;
+
             p {
                 margin-bottom: unset;
                 font-size: 0.6rem;
             }
         }
+
         &__img {
             max-width: 100px;
             max-height: 80px;
             scale: 1;
             transition: all 200ms ease-in-out;
+
             &:hover {
                 scale: 1.1;
             }
+        }
+    }
+
+    .es-finish--3 {
+        &__header {
+            font-family: "Gotham-Book";
+
+            strong {
+                font-family: "Gotham-Black";
+            }
+        }
+        &__single {
+            width: 25%;
+        }
+        &__packshotCtn {
+            position: relative;
+        }
+        &__packshot {
+            scale: 1;
+            transition: all 200ms ease-in-out;
+            &:hover {
+                scale: 1.1;
+            }
+        }
+        &__badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            max-width: 60%;
+        }
+        &__badge--circle {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 90%;
+        }
+        
+        &__icon {
+            height: 80px;
+        }
+        &__text {
+            font-family: "Open Sans", sans-serif;
         }
     }
 }

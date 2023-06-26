@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Metropolis-Black";
+  src: url("../fonts/Metropolis-Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+#es-rc #es-rc-content [data-es-rc] {
+  font-family: "Metropolis-Black";
+  color: #0f2d5a;
+}
+#es-rc #es-rc-content [data-es-rc] .es-dot {
+  height: 8px;
+  width: 8px;
+  background-color: #0f2d5a;
+  border-radius: 50%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-self: center;
+}
+#es-rc #es-rc-content [data-es-rc] .nav-tabs {
+  border-bottom: none;
+  gap: 10px;
+}
+#es-rc #es-rc-content [data-es-rc] .nav-tabs .nav-link {
+  text-transform: uppercase;
+  font-family: "Metropolis-Black";
+  color: #0f2d5a;
+  border: none;
+  padding-inline: 0;
+}
+#es-rc #es-rc-content [data-es-rc] .nav-tabs .nav-link.active {
+  border-bottom: 4px solid #ff0000;
+  color: #ff0000;
+}/*# sourceMappingURL=styles.css.map */

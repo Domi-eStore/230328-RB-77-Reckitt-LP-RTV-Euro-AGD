@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Metropolis-Black';
+    src: url("../fonts/Metropolis-Black.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$es-color-red: #ff0000;
+$es-color-navy: #0f2d5a;
+
+#es-rc #es-rc-content [data-es-rc] {
+    font-family: "Metropolis-Black";
+    color: $es-color-navy;
+
+    .es-dot {
+        height: 8px;
+        width: 8px;
+        background-color: $es-color-navy;
+        border-radius: 50%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-self: center;
+        
+    }
+
+    .nav-tabs {
+        border-bottom: none;
+        gap: 10px;
+        .nav-link {
+            text-transform: uppercase;
+            font-family: 'Metropolis-Black';
+            color: $es-color-navy;
+            border: none;
+            padding-inline: 0;
+            &.active {
+                border-bottom: 4px solid $es-color-red;
+                color: $es-color-red;
+            }
+
+        }
+    }
+
+}

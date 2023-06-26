@@ -90,17 +90,17 @@
   background-image: url("../images/bg-item-finish.webp");
   background-size: cover;
   background-position: center;
-  max-width: 150px;
-  height: 150px;
+  max-width: 130px;
+  height: 130px;
   aspect-ratio: 1;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--2__single p {
   margin-bottom: unset;
-  font-size: 0.75rem;
+  font-size: 0.6rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--2__img {
   max-width: 100px;
-  max-height: 100px;
+  max-height: 80px;
   scale: 1;
   transition: all 200ms ease-in-out;
 }

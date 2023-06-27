@@ -28,10 +28,28 @@ $es-color-navy: #0f2d5a;
 $es-color-navy--bg: #0a1f41;
 $es-color-gold: #e0c68c;
 
+/* animations */
+@keyframes rotate {
+	0% {
+		transform: 
+        translate(-50%,-40%)
+        rotate(0);
+        transform-origin: center;
+	}
+    100% {
+		transform: translate(-50%,-40%)
+        rotate(360deg);
+        transform-origin: center;
+	}
+}
+
 /* main styles */
 #es-rc #es-rc-content [data-es-rc] {
   font-family: "Metropolis-Black";
   color: $es-color-navy;
+  h2 {
+    font-size: 2.3rem;
+  }
   .es-mobile-menu {
     background-image: url(../images/mobile-menu.webp);
   }
@@ -131,18 +149,28 @@ $es-color-gold: #e0c68c;
       }
     }
   }
+
   .es-main--tab {
+
     &__header {
         position: relative;
         h2 {
             color: white;
             text-transform: uppercase;
+            margin-right: 2rem;
+            margin-top: 1rem;
             em {
                 font-style: normal;
                 display: block;
+                margin-left: 3rem;
             }
             span {
                 display: block;
+                font-size: 0.75em;
+                margin-left: 2em;
+            }
+            &:hover ~ .es-main--1__bg-icon {
+                scale: 1.0;
             }
         }
     }
@@ -150,16 +178,34 @@ $es-color-gold: #e0c68c;
         position: relative;
         z-index: 2;
     }
+    
     &__pack {
         position: relative;
         z-index: 2;
+        scale: 1;
+        transition: all 200ms ease-in;
+        &:hover {
+            scale: 1.05;
+        }
     }
 
     &__shine {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        left: 50%;
+        top: 49%;
+        transform: translate(-50%,-50%);
         z-index: 1;
+        animation: rotate 40s linear 0s infinite normal forwards;
+    }
+    @media (min-width: 500px) {
+        .es-main--tab__shine {
+            top: 56%;
+        }
+    }
+    @media (min-width: 600px) {
+        .es-main--tab__shine {
+            top: 60%;
+        }
     }
   }
   .es-main--1 {
@@ -175,11 +221,17 @@ $es-color-gold: #e0c68c;
     }
     &__bg-icon {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: -10px;
+        left: 79%;
+        transform: translate(-50%, 0);
+        scale: 0.9;
+        transition: all 200ms ease-in-out;
     }
-    
+    &__logo {
+        max-width: 35vw;
+    }
   }
+  
   .es-finish--tab {
     background-color: $es-color-navy--bg;
   }
@@ -282,4 +334,5 @@ $es-color-gold: #e0c68c;
       font-family: "Open Sans", sans-serif;
     }
   }
+
 }

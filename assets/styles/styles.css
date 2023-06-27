@@ -21,10 +21,24 @@
   font-display: swap;
 }
 /* variables */
+/* animations */
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -40%) rotate(0);
+    transform-origin: center;
+  }
+  100% {
+    transform: translate(-50%, -40%) rotate(360deg);
+    transform-origin: center;
+  }
+}
 /* main styles */
 #es-rc #es-rc-content [data-es-rc] {
   font-family: "Metropolis-Black";
   color: #0f2d5a;
+}
+#es-rc #es-rc-content [data-es-rc] h2 {
+  font-size: 2.3rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-mobile-menu {
   background-image: url(../images/mobile-menu.webp);
@@ -103,13 +117,21 @@
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__header h2 {
   color: white;
   text-transform: uppercase;
+  margin-right: 2rem;
+  margin-top: 1rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__header h2 em {
   font-style: normal;
   display: block;
+  margin-left: 3rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__header h2 span {
   display: block;
+  font-size: 0.75em;
+  margin-left: 2em;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--tab__header h2:hover ~ .es-main--1__bg-icon {
+  scale: 1;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__Ctn {
   position: relative;
@@ -118,12 +140,29 @@
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__pack {
   position: relative;
   z-index: 2;
+  scale: 1;
+  transition: all 200ms ease-in;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--tab__pack:hover {
+  scale: 1.05;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__shine {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  left: 50%;
+  top: 49%;
+  transform: translate(-50%, -50%);
   z-index: 1;
+  animation: rotate 40s linear 0s infinite normal forwards;
+}
+@media (min-width: 500px) {
+  #es-rc #es-rc-content [data-es-rc] .es-main--tab .es-main--tab__shine {
+    top: 56%;
+  }
+}
+@media (min-width: 600px) {
+  #es-rc #es-rc-content [data-es-rc] .es-main--tab .es-main--tab__shine {
+    top: 60%;
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--1 {
   background-image: url(../images/bg-main-1-mobile.webp);
@@ -135,8 +174,14 @@
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--1__bg-icon {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -10px;
+  left: 79%;
+  transform: translate(-50%, 0);
+  scale: 0.9;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--1__logo {
+  max-width: 35vw;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--tab {
   background-color: #0a1f41;

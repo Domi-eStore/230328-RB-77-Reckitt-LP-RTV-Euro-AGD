@@ -282,27 +282,39 @@
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__header {
   font-family: "Gotham-Book";
   text-transform: uppercase;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__header strong {
   font-family: "Gotham-Black";
 }
+#es-rc #es-rc-content [data-es-rc] .es-finish--1__header span {
+  font-size: 2.6rem;
+}
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__logo {
   max-height: 100px;
   width: auto;
+  margin-bottom: 2rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__pack {
   scale: 1;
   transition: all 200ms ease-in-out;
+  min-width: 250px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__pack:hover {
   scale: 1.05;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--2__flexCtn {
+  row-gap: 5px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--2__single {
   background-image: url("../images/bg-item-finish.webp");
   background-size: cover;
   background-position: center;
+  min-width: 130px;
   max-width: 200px;
-  height: 200px;
+  min-height: 130px;
+  max-height: 200px;
   aspect-ratio: 1;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--2__single:hover .es-finish--2__img {
@@ -310,11 +322,10 @@
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--2__single p {
   margin-bottom: unset;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--2__img {
-  max-width: 150px;
-  max-height: 120px;
+  min-height: 90px;
   scale: 1;
   transition: all 200ms ease-in-out;
 }
@@ -358,4 +369,13 @@
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--3__text {
   font-family: "Open Sans", sans-serif;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--4__header {
+  font-family: "Gotham-Book";
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--4__header strong {
+  font-family: "Metropolis-Black";
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--4__logo {
+  max-width: 70%;
 }/*# sourceMappingURL=styles.css.map */

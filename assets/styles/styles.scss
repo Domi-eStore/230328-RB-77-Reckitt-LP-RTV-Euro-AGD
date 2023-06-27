@@ -343,17 +343,24 @@ $es-color-gold: #e0c68c;
     &__header {
       font-family: "Gotham-Book";
       text-transform: uppercase;
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
       strong {
         font-family: "Gotham-Black";
+      }
+      span {
+        font-size: 2.6rem;
       }
     }
     &__logo {
       max-height: 100px;
       width: auto;
+      margin-bottom: 2rem;
     }
     &__pack {
       scale: 1;
       transition: all 200ms ease-in-out;
+      min-width: 250px;
       &:hover {
         scale: 1.05;
       }
@@ -361,24 +368,28 @@ $es-color-gold: #e0c68c;
   }
 
   .es-finish--2 {
+    &__flexCtn {
+        row-gap: 5px;
+    }
     &__single {
       background-image: url("../images/bg-item-finish.webp");
       background-size: cover;
       background-position: center;
-      max-width: 200px;
-      height: 200px;
+        min-width: 130px;
+        max-width: 200px;
+       min-height: 130px;
+       max-height: 200px;
       aspect-ratio: 1;
       &:hover .es-finish--2__img {
         scale: 1.1;
       }
       p {
         margin-bottom: unset;
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
     }
     &__img {
-      max-width: 150px;
-      max-height: 120px;
+      min-height: 90px;
       scale: 1;
       transition: all 200ms ease-in-out;
     }
@@ -419,12 +430,6 @@ $es-color-gold: #e0c68c;
       max-width: 60%;
       scale: 1;
     }
-    // &__badge--circle {
-    //     position: absolute;
-    //     top: 10px;
-    //     right: 10px;
-    //     width: 90%;
-    // }
 
     &__icon {
       height: 80px;
@@ -434,5 +439,15 @@ $es-color-gold: #e0c68c;
       font-family: "Open Sans", sans-serif;
     }
   }
-
+  .es-finish--4 {
+    &__header {
+        font-family: "Gotham-Book";
+      strong {
+        font-family: "Metropolis-Black";
+      }
+    }
+    &__logo {
+        max-width: 70%;
+    }
+  }
 }

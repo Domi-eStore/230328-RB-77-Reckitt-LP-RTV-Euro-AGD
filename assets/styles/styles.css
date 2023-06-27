@@ -97,6 +97,47 @@
   border-bottom: 4px solid #ff0000;
   color: #ff0000;
 }
+#es-rc #es-rc-content [data-es-rc] .es-main--tab__header {
+  position: relative;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--tab__header h2 {
+  color: white;
+  text-transform: uppercase;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--tab__header h2 em {
+  font-style: normal;
+  display: block;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--tab__header h2 span {
+  display: block;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--tab__Ctn {
+  position: relative;
+  z-index: 2;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--tab__pack {
+  position: relative;
+  z-index: 2;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--tab__shine {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--1 {
+  background-image: url(../images/bg-main-1-mobile.webp);
+  background-size: cover;
+  background-position: center;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--1__header h2 em {
+  color: #c8e860;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--1__bg-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 #es-rc #es-rc-content [data-es-rc] .es-finish--tab {
   background-color: #0a1f41;
 }

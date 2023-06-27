@@ -131,7 +131,55 @@ $es-color-gold: #e0c68c;
       }
     }
   }
+  .es-main--tab {
+    &__header {
+        position: relative;
+        h2 {
+            color: white;
+            text-transform: uppercase;
+            em {
+                font-style: normal;
+                display: block;
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+    &__Ctn {
+        position: relative;
+        z-index: 2;
+    }
+    &__pack {
+        position: relative;
+        z-index: 2;
+    }
 
+    &__shine {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+  }
+  .es-main--1 {
+    background-image: url(../images/bg-main-1-mobile.webp);
+    background-size: cover;
+    background-position: center;
+    &__header {
+        h2 {
+            em {
+                color: #c8e860;
+            }
+        }
+    }
+    &__bg-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+  }
   .es-finish--tab {
     background-color: $es-color-navy--bg;
   }

@@ -36,6 +36,7 @@
 #es-rc #es-rc-content [data-es-rc] {
   font-family: "Metropolis-Black";
   color: #0f2d5a;
+  overflow-x: hidden;
 }
 #es-rc #es-rc-content [data-es-rc] h2 {
   font-size: 2.3rem;
@@ -142,6 +143,7 @@
   z-index: 2;
   scale: 1;
   transition: all 200ms ease-in;
+  min-width: 300px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__pack:hover {
   scale: 1.05;
@@ -181,17 +183,22 @@
 #es-rc #es-rc-content [data-es-rc] .es-main--2__header h2 {
   position: relative;
   z-index: 2;
+  margin-left: -2rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--2__header h2 em {
   color: #1317a2;
+  margin-left: 7rem;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--2__header h2 span {
+  margin-left: 6rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--2__bg-icon {
   position: absolute;
   z-index: 0;
   top: -10px;
-  left: 79%;
+  left: 67%;
   transform: translate(-50%, 0);
-  scale: 0.9;
+  scale: 0.8;
   transition: all 200ms ease-in-out;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--2__Ctn {
@@ -203,6 +210,7 @@
   z-index: 2;
   scale: 1;
   transition: all 200ms ease-in;
+  min-width: 300px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--2__pack:hover {
   scale: 1.05;
@@ -223,17 +231,22 @@
 #es-rc #es-rc-content [data-es-rc] .es-main--3__header h2 {
   position: relative;
   z-index: 2;
+  margin-left: -4rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--3__header h2 em {
   color: #e41412;
+  margin-left: 7rem;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--3__header h2 span {
+  margin-left: 6rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--3__bg-icon {
   position: absolute;
   z-index: 0;
-  top: -10px;
+  top: 10px;
   left: 79%;
   transform: translate(-50%, 0);
-  scale: 0.9;
+  scale: 0.8;
   transition: all 200ms ease-in-out;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--3__Ctn {
@@ -245,6 +258,7 @@
   z-index: 2;
   scale: 1;
   transition: all 200ms ease-in;
+  min-width: 300px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--3__pack:hover {
   scale: 1.05;

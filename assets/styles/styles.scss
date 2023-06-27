@@ -43,10 +43,12 @@ $es-color-gold: #e0c68c;
 	}
 }
 
+
 /* main styles */
 #es-rc #es-rc-content [data-es-rc] {
   font-family: "Metropolis-Black";
   color: $es-color-navy;
+  overflow-x: hidden;
   h2 {
     font-size: 2.3rem;
   }
@@ -184,6 +186,7 @@ $es-color-gold: #e0c68c;
         z-index: 2;
         scale: 1;
         transition: all 200ms ease-in;
+        min-width: 300px;
         &:hover {
             scale: 1.05;
         }
@@ -231,8 +234,13 @@ $es-color-gold: #e0c68c;
         h2 {
         position: relative;
         z-index: 2;
+        margin-left: -2rem;
             em {
                 color: #1317a2;
+                margin-left: 7rem;
+            }
+            span {
+                margin-left: 6rem;
             }
         }
     }
@@ -240,9 +248,9 @@ $es-color-gold: #e0c68c;
         position: absolute;
         z-index: 0;
         top: -10px;
-        left: 79%;
+        left: 67%;
         transform: translate(-50%, 0);
-        scale: 0.9;
+        scale: 0.8;
         transition: all 200ms ease-in-out;
     }
     &__Ctn {
@@ -255,6 +263,7 @@ $es-color-gold: #e0c68c;
         z-index: 2;
         scale: 1;
         transition: all 200ms ease-in;
+        min-width: 300px;
         &:hover {
             scale: 1.05;
         }
@@ -278,18 +287,23 @@ $es-color-gold: #e0c68c;
         h2 {
         position: relative;
         z-index: 2;
+        margin-left: -4rem;
             em {
                 color: #e41412;
+                margin-left: 7rem;
+            }
+            span {
+                margin-left: 6rem;
             }
         }
     }
     &__bg-icon {
         position: absolute;
         z-index: 0;
-        top: -10px;
+        top: 10px;
         left: 79%;
         transform: translate(-50%, 0);
-        scale: 0.9;
+        scale: 0.8;
         transition: all 200ms ease-in-out;
     }
     &__Ctn {
@@ -302,6 +316,7 @@ $es-color-gold: #e0c68c;
         z-index: 2;
         scale: 1;
         transition: all 200ms ease-in;
+        min-width: 300px;
         &:hover {
             scale: 1.05;
         }

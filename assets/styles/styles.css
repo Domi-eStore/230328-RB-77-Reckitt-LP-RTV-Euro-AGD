@@ -149,20 +149,10 @@
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__shine {
   position: absolute;
   left: 50%;
-  top: 49%;
+  top: 4%;
   transform: translate(-50%, -50%);
   z-index: 1;
   animation: rotate 40s linear 0s infinite normal forwards;
-}
-@media (min-width: 500px) {
-  #es-rc #es-rc-content [data-es-rc] .es-main--tab .es-main--tab__shine {
-    top: 56%;
-  }
-}
-@media (min-width: 600px) {
-  #es-rc #es-rc-content [data-es-rc] .es-main--tab .es-main--tab__shine {
-    top: 60%;
-  }
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--1 {
   background-image: url(../images/bg-main-1-mobile.webp);
@@ -182,6 +172,90 @@
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--1__logo {
   max-width: 35vw;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--2 {
+  background-image: url(../images/bg-main-2-mobile.webp);
+  background-size: cover;
+  background-position: center;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--2__header h2 {
+  position: relative;
+  z-index: 2;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--2__header h2 em {
+  color: #1317a2;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--2__bg-icon {
+  position: absolute;
+  z-index: 0;
+  top: -10px;
+  left: 79%;
+  transform: translate(-50%, 0);
+  scale: 0.9;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--2__Ctn {
+  position: relative;
+  z-index: 2;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--2__pack {
+  position: relative;
+  z-index: 2;
+  scale: 1;
+  transition: all 200ms ease-in;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--2__pack:hover {
+  scale: 1.05;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--2__shine {
+  position: absolute;
+  left: 50%;
+  top: 13%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: rotate 40s linear 0s infinite normal forwards;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--3 {
+  background-image: url(../images/bg-main-3-mobile.webp);
+  background-size: cover;
+  background-position: center;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--3__header h2 {
+  position: relative;
+  z-index: 2;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--3__header h2 em {
+  color: #e41412;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--3__bg-icon {
+  position: absolute;
+  z-index: 0;
+  top: -10px;
+  left: 79%;
+  transform: translate(-50%, 0);
+  scale: 0.9;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--3__Ctn {
+  position: relative;
+  z-index: 2;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--3__pack {
+  position: relative;
+  z-index: 2;
+  scale: 1;
+  transition: all 200ms ease-in;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--3__pack:hover {
+  scale: 1.05;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--3__shine {
+  position: absolute;
+  left: 50%;
+  top: 13%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: rotate 40s linear 0s infinite normal forwards;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--tab {
   background-color: #0a1f41;

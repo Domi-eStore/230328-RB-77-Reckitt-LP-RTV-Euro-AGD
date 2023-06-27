@@ -192,21 +192,12 @@ $es-color-gold: #e0c68c;
     &__shine {
         position: absolute;
         left: 50%;
-        top: 49%;
+        top: 4%;
         transform: translate(-50%,-50%);
         z-index: 1;
         animation: rotate 40s linear 0s infinite normal forwards;
     }
-    @media (min-width: 500px) {
-        .es-main--tab__shine {
-            top: 56%;
-        }
-    }
-    @media (min-width: 600px) {
-        .es-main--tab__shine {
-            top: 60%;
-        }
-    }
+
   }
   .es-main--1 {
     background-image: url(../images/bg-main-1-mobile.webp);
@@ -231,7 +222,101 @@ $es-color-gold: #e0c68c;
         max-width: 35vw;
     }
   }
-  
+
+  .es-main--2 {
+    background-image: url(../images/bg-main-2-mobile.webp);
+    background-size: cover;
+    background-position: center;
+    &__header {
+        h2 {
+        position: relative;
+        z-index: 2;
+            em {
+                color: #1317a2;
+            }
+        }
+    }
+    &__bg-icon {
+        position: absolute;
+        z-index: 0;
+        top: -10px;
+        left: 79%;
+        transform: translate(-50%, 0);
+        scale: 0.9;
+        transition: all 200ms ease-in-out;
+    }
+    &__Ctn {
+        position: relative;
+        z-index: 2;
+    }
+    
+    &__pack {
+        position: relative;
+        z-index: 2;
+        scale: 1;
+        transition: all 200ms ease-in;
+        &:hover {
+            scale: 1.05;
+        }
+    }
+
+    &__shine {
+        position: absolute;
+        left: 50%;
+        top: 13%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+        animation: rotate 40s linear 0s infinite normal forwards;
+    }
+  }
+
+  .es-main--3 {
+    background-image: url(../images/bg-main-3-mobile.webp);
+    background-size: cover;
+    background-position: center;
+    &__header {
+        h2 {
+        position: relative;
+        z-index: 2;
+            em {
+                color: #e41412;
+            }
+        }
+    }
+    &__bg-icon {
+        position: absolute;
+        z-index: 0;
+        top: -10px;
+        left: 79%;
+        transform: translate(-50%, 0);
+        scale: 0.9;
+        transition: all 200ms ease-in-out;
+    }
+    &__Ctn {
+        position: relative;
+        z-index: 2;
+    }
+    
+    &__pack {
+        position: relative;
+        z-index: 2;
+        scale: 1;
+        transition: all 200ms ease-in;
+        &:hover {
+            scale: 1.05;
+        }
+    }
+
+    &__shine {
+        position: absolute;
+        left: 50%;
+        top: 13%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+        animation: rotate 40s linear 0s infinite normal forwards;
+    }
+  }
+
   .es-finish--tab {
     background-color: $es-color-navy--bg;
   }

@@ -1,26 +1,26 @@
 /* typography */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 @font-face {
-    font-family: 'Metropolis-Black';
-    src: url("../fonts/Metropolis-Black.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Metropolis-Black";
+  src: url("../fonts/Metropolis-Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Gotham-Black";
-    src: url("../fonts/Gotham-Black.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Gotham-Black";
+  src: url("../fonts/Gotham-Black.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Gotham-Book";
-    src: url("../fonts/Gotham-Book.otf") format("opentype");
-    font-style: normal;
-    font-display: swap;
+  font-family: "Gotham-Book";
+  src: url("../fonts/Gotham-Book.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
 }
 /* variables */
 $es-color-red: #ff0000;
@@ -30,190 +30,208 @@ $es-color-gold: #e0c68c;
 
 /* main styles */
 #es-rc #es-rc-content [data-es-rc] {
-    font-family: "Metropolis-Black";
-    color: $es-color-navy;
+  font-family: "Metropolis-Black";
+  color: $es-color-navy;
+  .es-mobile-menu {
+    background-image: url(../images/mobile-menu.webp);
+  }
 
+  .es-dot {
+    display: none;
+  }
+  @media (min-width: 560px) {
     .es-dot {
-        height: 8px;
-        width: 8px;
-        background-color: $es-color-navy;
-        border-radius: 50%;
-        display: inline-flex;
-        flex-wrap: wrap;
-        align-self: center;
+      height: 8px;
+      width: 8px;
+      background-color: $es-color-navy;
+      border-radius: 50%;
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-self: center;
     }
+  }
 
-    .es-header-gradient {
-        text-transform: uppercase;
-        background: rgb(224, 198, 140);
-        background: -moz-linear-gradient(142deg, rgba(224, 198, 140, 1) 0%, rgba(242, 231, 180, 1) 47%, rgba(201, 176, 117, 1) 100%);
-        background: -webkit-linear-gradient(142deg, rgba(224, 198, 140, 1) 0%, rgba(242, 231, 180, 1) 47%, rgba(201, 176, 117, 1) 100%);
-        background: linear-gradient(142deg, rgba(224, 198, 140, 1) 0%, rgba(242, 231, 180, 1) 47%, rgba(201, 176, 117, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0c68c", endColorstr="#c9b075", GradientType=1);
-        background-size: 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        text-fill-color: transparent;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
+  .es-header-gradient {
+    text-transform: uppercase;
+    background: rgb(224, 198, 140);
+    background: -moz-linear-gradient(
+      142deg,
+      rgba(224, 198, 140, 1) 0%,
+      rgba(242, 231, 180, 1) 47%,
+      rgba(201, 176, 117, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      142deg,
+      rgba(224, 198, 140, 1) 0%,
+      rgba(242, 231, 180, 1) 47%,
+      rgba(201, 176, 117, 1) 100%
+    );
+    background: linear-gradient(
+      142deg,
+      rgba(224, 198, 140, 1) 0%,
+      rgba(242, 231, 180, 1) 47%,
+      rgba(201, 176, 117, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0c68c", endColorstr="#c9b075", GradientType=1);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  .es-sup {
+    font-size: 0.6em;
+  }
+
+  .es-carousel {
+    &__slide {
+      max-width: 80%;
+      margin: auto;
     }
-    .es-sup {
-        font-size: 0.6em;
+    &__btn {
+      background-color: $es-color-gold;
+      border-radius: 50%;
+      background-image: none;
+      background-size: 25%;
+      background-position-y: center;
+
+      &--prev {
+        background-image: url(../images/btn-prev.webp);
+        background-position-x: 40%;
+      }
+
+      &--next {
+        background-image: url(../images/btn-next.webp);
+        background-position-x: 55%;
+      }
     }
+  }
 
-    .es-carousel {
-        &__slide {
-            max-width: 80%;
-            margin: auto;
-        }
-        &__btn {
-            background-color: $es-color-gold;
-            border-radius: 50%;
-            background-image: none;
-            background-size: 25%;
-            background-position-y: center;
+  .img-thumbnail {
+    border: none;
+    background-color: unset;
+  }
 
-            &--prev {
-                background-image: url(../images/btn-prev.webp);
-                background-position-x: 40%;
-            }
+  .nav-tabs {
+    border-bottom: none;
+    gap: 10px;
 
-            &--next {
-                background-image: url(../images/btn-next.webp);
-                background-position-x: 55%;
-            }
-        }
+    .nav-link {
+      text-transform: uppercase;
+      font-family: "Metropolis-Black";
+      color: $es-color-navy;
+      border: none;
+      padding-inline: 0;
 
+      &.active {
+        border-bottom: 4px solid $es-color-red;
+        color: $es-color-red;
+      }
     }
+  }
 
+  .es-finish--tab {
+    background-color: $es-color-navy--bg;
+  }
 
-
-    .img-thumbnail {
-        border: none;
-        background-color: unset;
+  .es-finish--1 {
+    background-image: url("../images/bg-finish.webp");
+    background-size: cover;
+    background-position: center;
+    &__header {
+      font-family: "Gotham-Book";
+      text-transform: uppercase;
+      strong {
+        font-family: "Gotham-Black";
+      }
     }
-
-    .nav-tabs {
-        border-bottom: none;
-        gap: 10px;
-
-        .nav-link {
-            text-transform: uppercase;
-            font-family: 'Metropolis-Black';
-            color: $es-color-navy;
-            border: none;
-            padding-inline: 0;
-
-            &.active {
-                border-bottom: 4px solid $es-color-red;
-                color: $es-color-red;
-            }
-
-        }
+    &__logo {
+      max-height: 100px;
+      width: auto;
     }
-
-    .es-finish--tab {
-        background-color: $es-color-navy--bg;
+    &__pack {
+      scale: 1;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        scale: 1.05;
+      }
     }
+  }
 
-
-    .es-finish--1 {
-        background-image: url("../images/bg-finish.webp");
-        background-size: cover;
-        background-position: center;
-        &__header {
-            font-family: "Gotham-Book";
-            text-transform: uppercase;
-            strong {
-                font-family: "Gotham-Black";
-            }
-        }
-        &__logo {
-            max-height: 100px;
-            width: auto;
-        }
-        &__pack {
-            scale: 1;
-            transition: all 200ms ease-in-out;
-            &:hover {
-                scale: 1.05;
-            }
-        }
+  .es-finish--2 {
+    &__single {
+      background-image: url("../images/bg-item-finish.webp");
+      background-size: cover;
+      background-position: center;
+      max-width: 200px;
+      height: 200px;
+      aspect-ratio: 1;
+      &:hover .es-finish--2__img {
+        scale: 1.1;
+      }
+      p {
+        margin-bottom: unset;
+        font-size: 1rem;
+      }
     }
-
-    .es-finish--2 {
-        &__single {
-            background-image: url("../images/bg-item-finish.webp");
-            background-size: cover;
-            background-position: center;
-            max-width: 200px;
-            height: 200px;
-            aspect-ratio: 1;
-            &:hover .es-finish--2__img {
-                scale: 1.1;
-            }
-            p {
-                margin-bottom: unset;
-                font-size: 1rem;
-            }
-        }
-        &__img {
-            max-width: 150px;
-            max-height: 120px;
-            scale: 1;
-            transition: all 200ms ease-in-out;
-        }
+    &__img {
+      max-width: 150px;
+      max-height: 120px;
+      scale: 1;
+      transition: all 200ms ease-in-out;
     }
+  }
 
-    .es-finish--3 {
-        &__header {
-            font-family: "Gotham-Book";
-            strong {
-                font-family: "Gotham-Black";
-            }
-        }
-        &__single {
-            width: 25%;
-            opacity: 0.8;
-            transform: all 200ms ease-in;
-            &:hover .es-finish--3__icon {
-                scale: 1.05;
-            }
-            &:hover {
-                opacity: 1;
-            }
-        }
-        &__packshotCtn {
-            position: relative;
-        }
-        &__packshot {
-            scale: 1;
-            transition: all 200ms ease-in-out;
-            &:hover .es-finish--3__badge {
-                scale: 1.1;
-            }
-        }
-        &__badge {
-            position: absolute;
-            top: 0;
-            right: 0;
-            max-width: 60%;
-            scale: 1;
-        }
-        // &__badge--circle {
-        //     position: absolute;
-        //     top: 10px;
-        //     right: 10px;
-        //     width: 90%;
-        // }
-        
-        &__icon {
-            height: 80px;
-            scale: 1;
-        }
-        &__text {
-            font-family: "Open Sans", sans-serif;
-        }
+  .es-finish--3 {
+    &__header {
+      font-family: "Gotham-Book";
+      strong {
+        font-family: "Gotham-Black";
+      }
     }
+    &__single {
+      width: 25%;
+      opacity: 0.8;
+      transform: all 200ms ease-in;
+      &:hover .es-finish--3__icon {
+        scale: 1.05;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &__packshotCtn {
+      position: relative;
+    }
+    &__packshot {
+      scale: 1;
+      transition: all 200ms ease-in-out;
+      &:hover .es-finish--3__badge {
+        scale: 1.1;
+      }
+    }
+    &__badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 60%;
+      scale: 1;
+    }
+    // &__badge--circle {
+    //     position: absolute;
+    //     top: 10px;
+    //     right: 10px;
+    //     width: 90%;
+    // }
+
+    &__icon {
+      height: 80px;
+      scale: 1;
+    }
+    &__text {
+      font-family: "Open Sans", sans-serif;
+    }
+  }
 }

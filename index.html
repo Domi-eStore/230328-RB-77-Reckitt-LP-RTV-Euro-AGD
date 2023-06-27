@@ -19,47 +19,66 @@
         <div data-es-rc>
           <div class="container-fluid">
             <div class="row">
-              <div class="col justify-content-center">
-                <nav class="d-flex justify-content-around">
-                  <div class="nav nav-tabs p-3" id="nav-tab" role="tablist">
+              <div class="col">
+                <nav
+                  class="navbar navbar-expand-sm navbar-light bg-light"
+                >
+                  <div class="container-fluid justify-content-end">
                     <button
-                      class="nav-link active"
-                      id="nav-home-tab"
-                      data-esbs-toggle="tab"
-                      data-esbs-target="#nav-home"
+                      class="navbar-toggler border-0"
                       type="button"
-                      role="tab"
-                      aria-controls="nav-home"
-                      aria-selected="true"
+                      data-esbs-toggle="collapse"
+                      data-esbs-target="#navbarNavDropdown"
+                      aria-controls="navbarNavDropdown"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
                     >
-                      Strona główna
+                      <span class="navbar-toggler-icon es-mobile-menu"></span>
                     </button>
-                    <div class="es-dot"></div>
-                    <button
-                      class="nav-link"
-                      id="nav-profile-tab"
-                      data-esbs-toggle="tab"
-                      data-esbs-target="#nav-profile"
-                      type="button"
-                      role="tab"
-                      aria-controls="nav-profile"
-                      aria-selected="false"
-                    >
-                      Strefa finish
-                    </button>
-                    <div class="es-dot"></div>
-                    <button
-                      class="nav-link"
-                      id="nav-contact-tab"
-                      data-esbs-toggle="tab"
-                      data-esbs-target="#nav-contact"
-                      type="button"
-                      role="tab"
-                      aria-controls="nav-contact"
-                      aria-selected="false"
-                    >
-                      Strefa prania
-                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                       <div class="nav nav-tabs p-3 justify-content-center" id="nav-tab" role="tablist">
+                      <button
+                        class="nav-link active"
+                        id="nav-home-tab"
+                        data-esbs-toggle="tab"
+                        data-esbs-target="#nav-home"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-home"
+                        aria-selected="true"
+                      >
+                        Strona główna
+                      </button>
+                      <div class="es-dot"></div>
+                      <button
+                        class="nav-link"
+                        id="nav-profile-tab"
+                        data-esbs-toggle="tab"
+                        data-esbs-target="#nav-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-profile"
+                        aria-selected="false"
+                      >
+                        Strefa finish
+                      </button>
+                      <div class="es-dot"></div>
+                      <button
+                        class="nav-link"
+                        id="nav-contact-tab"
+                        data-esbs-toggle="tab"
+                        data-esbs-target="#nav-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-contact"
+                        aria-selected="false"
+                      >
+                        Strefa prania
+                      </button>
+                    </div> 
+                    </div>
+
+                    
                   </div>
                 </nav>
 
@@ -348,7 +367,10 @@
                     <!-- usunąć kod między start i end i wstawić swój -->
                     <!-- start -->
                     <div class="row bg-white p-4">
-                      <div class="col-6 mx-auto" style="border: 1px solid orange">
+                      <div
+                        class="col-6 mx-auto"
+                        style="border: 1px solid orange"
+                      >
                         <h4 class="text-center p-2 m-0">karuzela produktowa</h4>
                       </div>
                     </div>
@@ -374,11 +396,14 @@
                     <!-- usunąć kod między start i end i wstawić swój -->
                     <!-- start -->
                     <div class="row bg-white p-4">
-                        <div class="col-6 mx-auto" style="border: 1px solid orange">
-                          <h4 class="text-center p-2 m-0">karuzela produktowa</h4>
-                        </div>
+                      <div
+                        class="col-6 mx-auto"
+                        style="border: 1px solid orange"
+                      >
+                        <h4 class="text-center p-2 m-0">karuzela produktowa</h4>
                       </div>
-                      <!-- end -->
+                    </div>
+                    <!-- end -->
 
                     <section class="container-fluid p-4 es-finish--5">
                       <div class="row">

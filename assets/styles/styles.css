@@ -26,14 +26,22 @@
   font-family: "Metropolis-Black";
   color: #0f2d5a;
 }
+#es-rc #es-rc-content [data-es-rc] .es-mobile-menu {
+  background-image: url(../images/mobile-menu.webp);
+}
 #es-rc #es-rc-content [data-es-rc] .es-dot {
-  height: 8px;
-  width: 8px;
-  background-color: #0f2d5a;
-  border-radius: 50%;
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-self: center;
+  display: none;
+}
+@media (min-width: 560px) {
+  #es-rc #es-rc-content [data-es-rc] .es-dot {
+    height: 8px;
+    width: 8px;
+    background-color: #0f2d5a;
+    border-radius: 50%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-self: center;
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .es-header-gradient {
   text-transform: uppercase;

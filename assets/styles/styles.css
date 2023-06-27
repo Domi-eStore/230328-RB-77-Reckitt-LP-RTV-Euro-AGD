@@ -1,3 +1,4 @@
+/* typography */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 @font-face {
   font-family: "Metropolis-Black";
@@ -19,6 +20,8 @@
   font-style: normal;
   font-display: swap;
 }
+/* variables */
+/* main styles */
 #es-rc #es-rc-content [data-es-rc] {
   font-family: "Metropolis-Black";
   color: #0f2d5a;
@@ -89,17 +92,17 @@
 #es-rc #es-rc-content [data-es-rc] .es-finish--tab {
   background-color: #0a1f41;
 }
-#es-rc #es-rc-content [data-es-rc] .es-tab2__header {
-  font-family: "Gotham-Book";
-  text-transform: uppercase;
-}
-#es-rc #es-rc-content [data-es-rc] .es-tab2__header strong {
-  font-family: "Gotham-Black";
-}
 #es-rc #es-rc-content [data-es-rc] .es-finish--1 {
   background-image: url("../images/bg-finish.webp");
   background-size: cover;
   background-position: center;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--1__header {
+  font-family: "Gotham-Book";
+  text-transform: uppercase;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--1__header strong {
+  font-family: "Gotham-Black";
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__logo {
   max-height: 100px;
@@ -110,28 +113,28 @@
   transition: all 200ms ease-in-out;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__pack:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--2__single {
   background-image: url("../images/bg-item-finish.webp");
   background-size: cover;
   background-position: center;
-  max-width: 130px;
-  height: 130px;
+  max-width: 200px;
+  height: 200px;
   aspect-ratio: 1;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--2__single:hover .es-finish--2__img {
+  scale: 1.1;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--2__single p {
   margin-bottom: unset;
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--2__img {
-  max-width: 100px;
-  max-height: 80px;
+  max-width: 150px;
+  max-height: 120px;
   scale: 1;
   transition: all 200ms ease-in-out;
-}
-#es-rc #es-rc-content [data-es-rc] .es-finish--2__img:hover {
-  scale: 1.1;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--3__header {
   font-family: "Gotham-Book";

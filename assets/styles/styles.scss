@@ -1,3 +1,4 @@
+/* typography */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @font-face {
     font-family: 'Metropolis-Black';
@@ -21,12 +22,13 @@
     font-style: normal;
     font-display: swap;
 }
-
+/* variables */
 $es-color-red: #ff0000;
 $es-color-navy: #0f2d5a;
 $es-color-navy--bg: #0a1f41;
 $es-color-gold: #e0c68c;
 
+/* main styles */
 #es-rc #es-rc-content [data-es-rc] {
     font-family: "Metropolis-Black";
     color: $es-color-navy;
@@ -115,34 +117,27 @@ $es-color-gold: #e0c68c;
         background-color: $es-color-navy--bg;
     }
 
-    .es-tab2 {
-        &__header {
-            font-family: "Gotham-Book";
-            text-transform: uppercase;
-
-            strong {
-                font-family: "Gotham-Black";
-            }
-        }
-
-    }
 
     .es-finish--1 {
         background-image: url("../images/bg-finish.webp");
         background-size: cover;
         background-position: center;
-
+        &__header {
+            font-family: "Gotham-Book";
+            text-transform: uppercase;
+            strong {
+                font-family: "Gotham-Black";
+            }
+        }
         &__logo {
             max-height: 100px;
             width: auto;
         }
-
         &__pack {
             scale: 1;
             transition: all 200ms ease-in-out;
-
             &:hover {
-                scale: 1.1;
+                scale: 1.05;
             }
         }
     }
@@ -152,25 +147,22 @@ $es-color-gold: #e0c68c;
             background-image: url("../images/bg-item-finish.webp");
             background-size: cover;
             background-position: center;
-            max-width: 130px;
-            height: 130px;
+            max-width: 200px;
+            height: 200px;
             aspect-ratio: 1;
-
-            p {
-                margin-bottom: unset;
-                font-size: 0.6rem;
-            }
-        }
-
-        &__img {
-            max-width: 100px;
-            max-height: 80px;
-            scale: 1;
-            transition: all 200ms ease-in-out;
-
-            &:hover {
+            &:hover .es-finish--2__img {
                 scale: 1.1;
             }
+            p {
+                margin-bottom: unset;
+                font-size: 1rem;
+            }
+        }
+        &__img {
+            max-width: 150px;
+            max-height: 120px;
+            scale: 1;
+            transition: all 200ms ease-in-out;
         }
     }
 

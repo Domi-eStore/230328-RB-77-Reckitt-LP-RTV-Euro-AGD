@@ -442,11 +442,12 @@
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--3__header strong {
   font-family: "Gotham-Black";
+  display: block;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--3__single {
-  width: 25%;
   opacity: 0.8;
   transform: all 200ms ease-in;
+  margin-block: 0.5rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--3__single:hover .es-finish--3__icon {
   scale: 1.05;
@@ -472,11 +473,44 @@
   scale: 1;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--3__icon {
-  height: 80px;
+  width: 40px;
   scale: 1;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--3__text {
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 0;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-finish--3__badge {
+    top: -10%;
+    right: -10%;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content [data-es-rc] .es-finish--3__header strong {
+    display: inline;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-finish--3__badge {
+    top: -13%;
+    right: 5%;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-finish--3__icon {
+    width: auto;
+    height: 80px;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-finish--3__single {
+    width: 23%;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content [data-es-rc] .es-finish--3__packshot {
+    scale: 1.2;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-finish--3__badge {
+    scale: 1.3;
+    top: -17%;
+    right: -20%;
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--4__header {
   font-family: "Gotham-Book";

@@ -794,4 +794,108 @@ $es-color-gold: #e0c68c;
         }
     }
 
+    .es-pranie--3 {
+        background-image: url("../images/lovela-bg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: "Metropolis-Black";
+        text-transform: uppercase;
+        &__logo {
+            max-width: 150px;
+        }
+        &__header {
+            margin-block: 0.5rem;
+            color: $es-color-navy-pranie;
+        }
+        &__badge {
+            display: none;
+        }
+        &__pack {
+            scale: 1;
+            transition: all 200ms ease-in-out;
+            min-width: 250px;
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+
+    @media (min-width: 576px) {
+        .es-pranie--3 {
+            &__header {
+                font-size: 1.2rem;
+            }
+            &__badge {
+                display: block;
+                position: absolute;
+                left: 43%;
+                max-width: 100px;
+            }
+        }
+    }
+    @media (min-width: 800px) {
+        .es-pranie--3 {
+            &__logo {
+                max-width: 200px;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        .es-pranie--3 {
+            &__badge {
+                max-width: 150px;
+                bottom: 22%;
+            }
+        }
+    }
+
+    .es-pranie--4 {
+        &__flexCtn {
+            row-gap: 5px;
+        }
+        &__single {
+
+            min-width: 130px;
+            max-width: 200px;
+            
+
+
+            &:hover .es-finish--2__img {
+                scale: 1.1;
+            }
+            p {
+                text-transform: uppercase;
+                color: $es-color-navy-pranie;
+                margin-bottom: unset;
+                font-size: 0.8rem;
+                height: 2.2rem;
+            }
+        }
+        &__img {
+            max-width: 100px;
+            scale: 1;
+            transition: all 200ms ease-in-out;
+        }
+    }
+@media (min-width: 576px) {
+    .es-pranie--4 {
+        &__single {
+            p {
+                font-size: 1rem;
+                height: 2.5rem;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .es-pranie--4 {
+        &__single {
+            p {
+                height: 4.2rem;
+            }
+        }
+    }
+}
 }

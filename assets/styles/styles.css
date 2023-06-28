@@ -365,17 +365,21 @@
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--1 {
   background-image: url("../images/bg-finish.webp");
-  background-size: cover;
-  background-position: center;
+  background-size: 250%;
+  background-position-x: 84%;
+  background-position-y: 150%;
+  background-repeat: no-repeat;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__header {
   font-family: "Gotham-Book";
   text-transform: uppercase;
-  font-size: 2.2rem;
+  font-size: 2.7rem;
   margin-bottom: 2rem;
+  line-height: 0.9;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__header strong {
   font-family: "Gotham-Black";
+  font-size: 2.2rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__header span {
   font-size: 2.6rem;
@@ -392,6 +396,16 @@
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__pack:hover {
   scale: 1.05;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-finish--1 {
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-finish--1__header strong {
+    display: block;
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--2__flexCtn {
   row-gap: 5px;
@@ -417,6 +431,11 @@
   min-height: 90px;
   scale: 1;
   transition: all 200ms ease-in-out;
+}
+@media (min-wdth: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-finish--2__single p {
+    font-size: 1rem;
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--3__header {
   font-family: "Gotham-Book";

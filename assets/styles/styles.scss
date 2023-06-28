@@ -28,6 +28,7 @@
 $es-color-red: #ff0000;
 $es-color-navy: #0f2d5a;
 $es-color-navy--bg: #0a1f41;
+$es-color-navy-pranie: #202f77;
 $es-color-gold: #e0c68c;
 
 /* animations */
@@ -673,9 +674,11 @@ $es-color-gold: #e0c68c;
         background-size: cover;
         background-position: center;
         min-height: 600px;
+
         &__header {
             font-family: "Gotham-Book";
             padding: 1rem;
+
             strong {
                 font-family: "Metropolis-Black";
                 display: block;
@@ -686,27 +689,116 @@ $es-color-gold: #e0c68c;
             width: 60%;
             max-width: 250px;
         }
+
         &__badge {
             display: none;
         }
+
         &__packs {
             width: 80%;
             max-width: 500px;
         }
     }
+
     @media (min-width: 768px) {
         .es-finish--4 {
             background-image: url("../images/bg-finish--4-desktop.webp");
             min-height: unset;
+
             &__badge {
                 display: block;
                 max-width: 250px;
                 margin-inline: auto;
                 margin-block: 2rem;
             }
+
             &__packs {
                 max-width: unset;
             }
         }
     }
+
+    /*******************************************************/
+    /*** pranie **************/
+
+    .es-pranie--1 {
+        background-image: url("../images/bg-pranie-mobile.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: "Metropolis-Black";
+        text-transform: uppercase;
+        // min-height: 400px;
+        &__header {
+            font-size: 2.7rem;
+            margin-bottom: 0;
+            margin-top: 4rem;
+            line-height: 0.9;
+            color: $es-color-navy-pranie;
+        }
+        &__pack {
+            scale: 1;
+            transition: all 200ms ease-in-out;
+            min-width: 250px;
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+
+    @media (min-width: 576px) {
+        .es-pranie--1 {
+            background-image: url("../images/bg-pranie-dekstop.webp");
+            &__header {
+                font-size: 2.1rem;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .es-pranie--2 {
+        &__flexCtn {
+            row-gap: 5px;
+        }
+        &__single {
+            background-image: url("../images/pranie-bg--1.webp");
+            background-size: cover;
+            background-position: center;
+            min-width: 130px;
+            max-width: 200px;
+            min-height: 130px;
+            max-height: 200px;
+            aspect-ratio: 1;
+            &--2 {
+                background-image: url("../images/pranie-bg--2.webp");
+            }
+            &:hover .es-finish--2__img {
+                scale: 1.1;
+            }
+
+            p {
+                text-transform: uppercase;
+                color: $es-color-navy-pranie;
+                margin-bottom: unset;
+                font-size: 1rem;
+            }
+        }
+
+        &__img {
+            min-height: 90px;
+            scale: 1;
+            transition: all 200ms ease-in-out;
+        }
+    }
+
+    // @media (min-wdth: 576px) {
+    //     .es-pranie--2 {
+    //         &__single {
+    //             p {
+    //                 font-size: 1rem;
+    //             }
+    //         }
+    //     }
+    // }
 }

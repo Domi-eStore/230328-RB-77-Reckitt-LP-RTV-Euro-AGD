@@ -112,6 +112,10 @@
   border-bottom: 4px solid #ff0000;
   color: #ff0000;
 }
+#es-rc #es-rc-content [data-es-rc] .es-main--tab__Ctn {
+  min-height: 400px;
+  aspect-ratio: 400/550;
+}
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__header {
   position: relative;
 }
@@ -131,9 +135,6 @@
   font-size: 0.75em;
   margin-left: 2em;
 }
-#es-rc #es-rc-content [data-es-rc] .es-main--tab__header h2:hover ~ .es-main--1__bg-icon {
-  scale: 1;
-}
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__Ctn {
   position: relative;
   z-index: 2;
@@ -143,7 +144,7 @@
   z-index: 2;
   scale: 1;
   transition: all 200ms ease-in;
-  min-width: 300px;
+  min-width: 200px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__pack:hover {
   scale: 1.05;
@@ -155,6 +156,17 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   animation: rotate 40s linear 0s infinite normal forwards;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-main--tab__Ctn {
+    min-height: 300px;
+    aspect-ratio: unset;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content [data-es-rc] .es-main--tab__Ctn {
+    min-height: 350px;
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--1 {
   background-image: url(../images/bg-main-1-mobile.webp);
@@ -173,7 +185,60 @@
   transition: all 200ms ease-in-out;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--1__logo {
-  max-width: 35vw;
+  max-width: 100px;
+}
+@media (min-width: 460px) {
+  #es-rc #es-rc-content [data-es-rc] .es-main--1 .es-main--1__logo {
+    max-width: 200px;
+  }
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--1__Ctn {
+  position: relative;
+  z-index: 2;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--1__pack {
+  position: relative;
+  z-index: 2;
+  scale: 1;
+  transition: all 200ms ease-in;
+  min-width: 200px;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--1__pack:hover {
+  scale: 1.05;
+}
+#es-rc #es-rc-content [data-es-rc] .es-main--1__shine {
+  position: absolute;
+  left: 50%;
+  top: 13%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: rotate 40s linear 0s infinite normal forwards;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-main--1 {
+    background-image: url("../images/bg-main-1-desktop.webp");
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-main--1__Ctn--L {
+    flex-direction: column-reverse !important;
+    justify-content: center;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-main--1__logo {
+    max-width: 100px !important;
+    display: block;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-main--1__bg-icon {
+    top: -48%;
+    left: 32%;
+    scale: 1.2;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-main--1__shine {
+    scale: 1.4;
+    left: 71%;
+    top: 29%;
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--2 {
   background-image: url(../images/bg-main-2-mobile.webp);
@@ -201,6 +266,13 @@
   scale: 0.8;
   transition: all 200ms ease-in-out;
 }
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-main--2 .es-main--2__bg-icon {
+    scale: 1.2;
+    left: 48%;
+    top: -10%;
+  }
+}
 #es-rc #es-rc-content [data-es-rc] .es-main--2__Ctn {
   position: relative;
   z-index: 2;
@@ -210,7 +282,7 @@
   z-index: 2;
   scale: 1;
   transition: all 200ms ease-in;
-  min-width: 300px;
+  min-width: 200px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--2__pack:hover {
   scale: 1.05;
@@ -222,6 +294,11 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   animation: rotate 40s linear 0s infinite normal forwards;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-main--2 {
+    background-image: url("../images/bg-main-2-desktop.webp");
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--3 {
   background-image: url(../images/bg-main-3-mobile.webp);
@@ -249,6 +326,13 @@
   scale: 0.8;
   transition: all 200ms ease-in-out;
 }
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-main--3 .es-main--3__bg-icon {
+    scale: 1.2;
+    left: 48%;
+    top: -10%;
+  }
+}
 #es-rc #es-rc-content [data-es-rc] .es-main--3__Ctn {
   position: relative;
   z-index: 2;
@@ -258,7 +342,7 @@
   z-index: 2;
   scale: 1;
   transition: all 200ms ease-in;
-  min-width: 300px;
+  min-width: 200px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--3__pack:hover {
   scale: 1.05;
@@ -266,10 +350,15 @@
 #es-rc #es-rc-content [data-es-rc] .es-main--3__shine {
   position: absolute;
   left: 50%;
-  top: 13%;
+  top: 0%;
   transform: translate(-50%, -50%);
   z-index: 1;
   animation: rotate 40s linear 0s infinite normal forwards;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-main--3 {
+    background-image: url("../images/bg-main-3-desktop.webp");
+  }
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--tab {
   background-color: #0a1f41;

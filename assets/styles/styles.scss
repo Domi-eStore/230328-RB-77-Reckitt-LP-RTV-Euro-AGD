@@ -1,27 +1,29 @@
 /* typography */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
 @font-face {
-  font-family: "Metropolis-Black";
-  src: url("../fonts/Metropolis-Black.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Metropolis-Black";
+    src: url("../fonts/Metropolis-Black.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Gotham-Black";
-  src: url("../fonts/Gotham-Black.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Gotham-Black";
+    src: url("../fonts/Gotham-Black.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Gotham-Book";
-  src: url("../fonts/Gotham-Book.otf") format("opentype");
-  font-style: normal;
-  font-display: swap;
+    font-family: "Gotham-Book";
+    src: url("../fonts/Gotham-Book.otf") format("opentype");
+    font-style: normal;
+    font-display: swap;
 }
+
 /* variables */
 $es-color-red: #ff0000;
 $es-color-navy: #0f2d5a;
@@ -30,424 +32,566 @@ $es-color-gold: #e0c68c;
 
 /* animations */
 @keyframes rotate {
-	0% {
-		transform: 
-        translate(-50%,-40%)
-        rotate(0);
+    0% {
+        transform:
+            translate(-50%, -40%) rotate(0);
         transform-origin: center;
-	}
+    }
+
     100% {
-		transform: translate(-50%,-40%)
-        rotate(360deg);
+        transform: translate(-50%, -40%) rotate(360deg);
         transform-origin: center;
-	}
+    }
 }
 
 
 /* main styles */
 #es-rc #es-rc-content [data-es-rc] {
-  font-family: "Metropolis-Black";
-  color: $es-color-navy;
-  overflow-x: hidden;
-  h2 {
-    font-size: 2.3rem;
-  }
-  .es-mobile-menu {
-    background-image: url(../images/mobile-menu.webp);
-  }
+    font-family: "Metropolis-Black";
+    color: $es-color-navy;
+    overflow-x: hidden;
 
-  .es-dot {
-    display: none;
-  }
-  @media (min-width: 560px) {
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    .es-mobile-menu {
+        background-image: url(../images/mobile-menu.webp);
+    }
+
     .es-dot {
-      height: 8px;
-      width: 8px;
-      background-color: $es-color-navy;
-      border-radius: 50%;
-      display: inline-flex;
-      flex-wrap: wrap;
-      align-self: center;
+        display: none;
     }
-  }
 
-  .es-header-gradient {
-    text-transform: uppercase;
-    background: rgb(224, 198, 140);
-    background: -moz-linear-gradient(
-      142deg,
-      rgba(224, 198, 140, 1) 0%,
-      rgba(242, 231, 180, 1) 47%,
-      rgba(201, 176, 117, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-      142deg,
-      rgba(224, 198, 140, 1) 0%,
-      rgba(242, 231, 180, 1) 47%,
-      rgba(201, 176, 117, 1) 100%
-    );
-    background: linear-gradient(
-      142deg,
-      rgba(224, 198, 140, 1) 0%,
-      rgba(242, 231, 180, 1) 47%,
-      rgba(201, 176, 117, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0c68c", endColorstr="#c9b075", GradientType=1);
-    background-size: 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-  .es-sup {
-    font-size: 0.6em;
-  }
-
-  .es-carousel {
-    &__slide {
-      max-width: 80%;
-      margin: auto;
+    @media (min-width: 560px) {
+        .es-dot {
+            height: 8px;
+            width: 8px;
+            background-color: $es-color-navy;
+            border-radius: 50%;
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-self: center;
+        }
     }
-    &__btn {
-      background-color: $es-color-gold;
-      border-radius: 50%;
-      background-image: none;
-      background-size: 25%;
-      background-position-y: center;
 
-      &--prev {
-        background-image: url(../images/btn-prev.webp);
-        background-position-x: 40%;
-      }
-
-      &--next {
-        background-image: url(../images/btn-next.webp);
-        background-position-x: 55%;
-      }
+    .es-header-gradient {
+        text-transform: uppercase;
+        background: rgb(224, 198, 140);
+        background: -moz-linear-gradient(142deg,
+                rgba(224, 198, 140, 1) 0%,
+                rgba(242, 231, 180, 1) 47%,
+                rgba(201, 176, 117, 1) 100%);
+        background: -webkit-linear-gradient(142deg,
+                rgba(224, 198, 140, 1) 0%,
+                rgba(242, 231, 180, 1) 47%,
+                rgba(201, 176, 117, 1) 100%);
+        background: linear-gradient(142deg,
+                rgba(224, 198, 140, 1) 0%,
+                rgba(242, 231, 180, 1) 47%,
+                rgba(201, 176, 117, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0c68c", endColorstr="#c9b075", GradientType=1);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
     }
-  }
 
-  .img-thumbnail {
-    border: none;
-    background-color: unset;
-  }
-
-  .nav-tabs {
-    border-bottom: none;
-    gap: 10px;
-
-    .nav-link {
-      text-transform: uppercase;
-      font-family: "Metropolis-Black";
-      color: $es-color-navy;
-      border: none;
-      padding-inline: 0;
-
-      &.active {
-        border-bottom: 4px solid $es-color-red;
-        color: $es-color-red;
-      }
+    .es-sup {
+        font-size: 0.6em;
     }
-  }
 
-  .es-main--tab {
+    .es-carousel {
+        &__slide {
+            max-width: 80%;
+            margin: auto;
+        }
 
-    &__header {
-        position: relative;
-        h2 {
-            color: white;
+        &__btn {
+            background-color: $es-color-gold;
+            border-radius: 50%;
+            background-image: none;
+            background-size: 25%;
+            background-position-y: center;
+
+            &--prev {
+                background-image: url(../images/btn-prev.webp);
+                background-position-x: 40%;
+            }
+
+            &--next {
+                background-image: url(../images/btn-next.webp);
+                background-position-x: 55%;
+            }
+        }
+    }
+
+    .img-thumbnail {
+        border: none;
+        background-color: unset;
+    }
+
+    .nav-tabs {
+        border-bottom: none;
+        gap: 10px;
+
+        .nav-link {
             text-transform: uppercase;
-            margin-right: 2rem;
-            margin-top: 1rem;
-            em {
-                font-style: normal;
+            font-family: "Metropolis-Black";
+            color: $es-color-navy;
+            border: none;
+            padding-inline: 0;
+
+            &.active {
+                border-bottom: 4px solid $es-color-red;
+                color: $es-color-red;
+            }
+        }
+    }
+
+    .es-main--tab {
+        &__Ctn {
+            min-height: 400px;
+            aspect-ratio: 400 / 550;
+        }
+
+        &__header {
+            position: relative;
+
+            h2 {
+                color: white;
+                text-transform: uppercase;
+                margin-right: 2rem;
+                margin-top: 1rem;
+
+                em {
+                    font-style: normal;
+                    display: block;
+                    margin-left: 3rem;
+                }
+
+                span {
+                    display: block;
+                    font-size: 0.75em;
+                    margin-left: 2em;
+                }
+            }
+        }
+
+        &__Ctn {
+            position: relative;
+            z-index: 2;
+        }
+
+        &__pack {
+            position: relative;
+            z-index: 2;
+            scale: 1;
+            transition: all 200ms ease-in;
+            min-width: 200px;
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
+
+        &__shine {
+            position: absolute;
+            left: 50%;
+            top: 4%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            animation: rotate 40s linear 0s infinite normal forwards;
+        }
+
+    }
+
+    @media (min-width: 576px) {
+        .es-main--tab {
+            &__Ctn {
+                min-height: 300px;
+                aspect-ratio: unset;
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        .es-main--tab {
+            &__Ctn {
+                min-height: 350px;
+            }
+        }
+    }
+
+    .es-main--1 {
+        background-image: url(../images/bg-main-1-mobile.webp);
+        background-size: cover;
+        background-position: center;
+
+        &__header {
+            h2 {
+                em {
+                    color: #c8e860;
+                }
+            }
+        }
+
+        &__bg-icon {
+            position: absolute;
+            top: -10px;
+            left: 79%;
+            transform: translate(-50%, 0);
+            scale: 0.9;
+            transition: all 200ms ease-in-out;
+        }
+
+        &__logo {
+            max-width: 100px;
+        }
+
+        @media (min-width: 460px) {
+            .es-main--1__logo {
+                max-width: 200px;
+            }
+        }
+
+        &__Ctn {
+            position: relative;
+            z-index: 2;
+        }
+
+        &__pack {
+            position: relative;
+            z-index: 2;
+            scale: 1;
+            transition: all 200ms ease-in;
+            min-width: 200px;
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
+
+        &__shine {
+            position: absolute;
+            left: 50%;
+            top: 13%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            animation: rotate 40s linear 0s infinite normal forwards;
+        }
+
+    }
+
+    @media (min-width: 576px) {
+        .es-main--1 {
+            background-image: url("../images/bg-main-1-desktop.webp");
+            &__Ctn--L {
+                flex-direction: column-reverse !important;
+                justify-content: center;
+            }
+            &__logo {
+                max-width: 100px !important;
                 display: block;
-                margin-left: 3rem;
+                margin: auto;
+                margin-bottom: 0.5rem;
+                margin-top: 0;
             }
+            &__bg-icon {
+                top: -48%;
+                left: 32%;
+                scale: 1.2;
+            }
+            &__shine {
+                scale: 1.4;
+                left: 71%;
+                top: 29%;
+            }
+        }
+    }
+
+    .es-main--2 {
+        background-image: url(../images/bg-main-2-mobile.webp);
+        background-size: cover;
+        background-position: center;
+
+        &__header {
+            h2 {
+                position: relative;
+                z-index: 2;
+                margin-left: -2rem;
+
+                em {
+                    color: #1317a2;
+                    margin-left: 7rem;
+                }
+
+                span {
+                    margin-left: 6rem;
+                }
+            }
+        }
+
+        &__bg-icon {
+            position: absolute;
+            z-index: 0;
+            top: -10px;
+            left: 67%;
+            transform: translate(-50%, 0);
+            scale: 0.8;
+            transition: all 200ms ease-in-out;
+        }
+        @media (min-width: 576px) {
+            .es-main--2__bg-icon {
+                scale: 1.2;
+                left: 48%;
+                top: -10%;
+            }
+        }
+
+        &__Ctn {
+            position: relative;
+            z-index: 2;
+        }
+
+        &__pack {
+            position: relative;
+            z-index: 2;
+            scale: 1;
+            transition: all 200ms ease-in;
+            min-width: 200px;
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
+
+        &__shine {
+            position: absolute;
+            left: 50%;
+            top: 13%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            animation: rotate 40s linear 0s infinite normal forwards;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .es-main--2 {
+            background-image: url("../images/bg-main-2-desktop.webp");
+        }}
+
+    .es-main--3 {
+        background-image: url(../images/bg-main-3-mobile.webp);
+        background-size: cover;
+        background-position: center;
+
+        &__header {
+            h2 {
+                position: relative;
+                z-index: 2;
+                margin-left: -4rem;
+
+                em {
+                    color: #e41412;
+                    margin-left: 7rem;
+                }
+
+                span {
+                    margin-left: 6rem;
+                }
+            }
+        }
+
+        &__bg-icon {
+            position: absolute;
+            z-index: 0;
+            top: 10px;
+            left: 79%;
+            transform: translate(-50%, 0);
+            scale: 0.8;
+            transition: all 200ms ease-in-out;
+        }
+        @media (min-width: 576px) {
+            .es-main--3__bg-icon {
+                scale: 1.2;
+                left: 48%;
+                top: -10%;
+            }
+        }
+
+        &__Ctn {
+            position: relative;
+            z-index: 2;
+        }
+
+        &__pack {
+            position: relative;
+            z-index: 2;
+            scale: 1;
+            transition: all 200ms ease-in;
+            min-width: 200px;
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
+
+        &__shine {
+            position: absolute;
+            left: 50%;
+            top: 0%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            animation: rotate 40s linear 0s infinite normal forwards;
+        }
+    }
+    @media (min-width: 576px) {
+        .es-main--3 {
+            background-image: url("../images/bg-main-3-desktop.webp");
+        }}
+
+    .es-finish--tab {
+        background-color: $es-color-navy--bg;
+    }
+
+    .es-finish--1 {
+        background-image: url("../images/bg-finish.webp");
+        background-size: cover;
+        background-position: center;
+
+        &__header {
+            font-family: "Gotham-Book";
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+
+            strong {
+                font-family: "Gotham-Black";
+            }
+
             span {
-                display: block;
-                font-size: 0.75em;
-                margin-left: 2em;
-            }
-            &:hover ~ .es-main--1__bg-icon {
-                scale: 1.0;
+                font-size: 2.6rem;
             }
         }
-    }
-    &__Ctn {
-        position: relative;
-        z-index: 2;
-    }
-    
-    &__pack {
-        position: relative;
-        z-index: 2;
-        scale: 1;
-        transition: all 200ms ease-in;
-        min-width: 300px;
-        &:hover {
-            scale: 1.05;
+
+        &__logo {
+            max-height: 100px;
+            width: auto;
+            margin-bottom: 2rem;
         }
-    }
 
-    &__shine {
-        position: absolute;
-        left: 50%;
-        top: 4%;
-        transform: translate(-50%,-50%);
-        z-index: 1;
-        animation: rotate 40s linear 0s infinite normal forwards;
-    }
+        &__pack {
+            scale: 1;
+            transition: all 200ms ease-in-out;
+            min-width: 250px;
 
-  }
-  .es-main--1 {
-    background-image: url(../images/bg-main-1-mobile.webp);
-    background-size: cover;
-    background-position: center;
-    &__header {
-        h2 {
-            em {
-                color: #c8e860;
+            &:hover {
+                scale: 1.05;
             }
         }
     }
-    &__bg-icon {
-        position: absolute;
-        top: -10px;
-        left: 79%;
-        transform: translate(-50%, 0);
-        scale: 0.9;
-        transition: all 200ms ease-in-out;
-    }
-    &__logo {
-        max-width: 35vw;
-    }
-  }
 
-  .es-main--2 {
-    background-image: url(../images/bg-main-2-mobile.webp);
-    background-size: cover;
-    background-position: center;
-    &__header {
-        h2 {
-        position: relative;
-        z-index: 2;
-        margin-left: -2rem;
-            em {
-                color: #1317a2;
-                margin-left: 7rem;
+    .es-finish--2 {
+        &__flexCtn {
+            row-gap: 5px;
+        }
+
+        &__single {
+            background-image: url("../images/bg-item-finish.webp");
+            background-size: cover;
+            background-position: center;
+            min-width: 130px;
+            max-width: 200px;
+            min-height: 130px;
+            max-height: 200px;
+            aspect-ratio: 1;
+
+            &:hover .es-finish--2__img {
+                scale: 1.1;
             }
-            span {
-                margin-left: 6rem;
+
+            p {
+                margin-bottom: unset;
+                font-size: 0.8rem;
             }
         }
-    }
-    &__bg-icon {
-        position: absolute;
-        z-index: 0;
-        top: -10px;
-        left: 67%;
-        transform: translate(-50%, 0);
-        scale: 0.8;
-        transition: all 200ms ease-in-out;
-    }
-    &__Ctn {
-        position: relative;
-        z-index: 2;
-    }
-    
-    &__pack {
-        position: relative;
-        z-index: 2;
-        scale: 1;
-        transition: all 200ms ease-in;
-        min-width: 300px;
-        &:hover {
-            scale: 1.05;
+
+        &__img {
+            min-height: 90px;
+            scale: 1;
+            transition: all 200ms ease-in-out;
         }
     }
 
-    &__shine {
-        position: absolute;
-        left: 50%;
-        top: 13%;
-        transform: translate(-50%,-50%);
-        z-index: 1;
-        animation: rotate 40s linear 0s infinite normal forwards;
-    }
-  }
+    .es-finish--3 {
+        &__header {
+            font-family: "Gotham-Book";
 
-  .es-main--3 {
-    background-image: url(../images/bg-main-3-mobile.webp);
-    background-size: cover;
-    background-position: center;
-    &__header {
-        h2 {
-        position: relative;
-        z-index: 2;
-        margin-left: -4rem;
-            em {
-                color: #e41412;
-                margin-left: 7rem;
-            }
-            span {
-                margin-left: 6rem;
+            strong {
+                font-family: "Gotham-Black";
             }
         }
-    }
-    &__bg-icon {
-        position: absolute;
-        z-index: 0;
-        top: 10px;
-        left: 79%;
-        transform: translate(-50%, 0);
-        scale: 0.8;
-        transition: all 200ms ease-in-out;
-    }
-    &__Ctn {
-        position: relative;
-        z-index: 2;
-    }
-    
-    &__pack {
-        position: relative;
-        z-index: 2;
-        scale: 1;
-        transition: all 200ms ease-in;
-        min-width: 300px;
-        &:hover {
-            scale: 1.05;
+
+        &__single {
+            width: 25%;
+            opacity: 0.8;
+            transform: all 200ms ease-in;
+
+            &:hover .es-finish--3__icon {
+                scale: 1.05;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        &__packshotCtn {
+            position: relative;
+        }
+
+        &__packshot {
+            scale: 1;
+            transition: all 200ms ease-in-out;
+
+            &:hover .es-finish--3__badge {
+                scale: 1.1;
+            }
+        }
+
+        &__badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            max-width: 60%;
+            scale: 1;
+        }
+
+        &__icon {
+            height: 80px;
+            scale: 1;
+        }
+
+        &__text {
+            font-family: "Open Sans", sans-serif;
         }
     }
 
-    &__shine {
-        position: absolute;
-        left: 50%;
-        top: 13%;
-        transform: translate(-50%,-50%);
-        z-index: 1;
-        animation: rotate 40s linear 0s infinite normal forwards;
-    }
-  }
+    .es-finish--4 {
+        &__header {
+            font-family: "Gotham-Book";
 
-  .es-finish--tab {
-    background-color: $es-color-navy--bg;
-  }
+            strong {
+                font-family: "Metropolis-Black";
+            }
+        }
 
-  .es-finish--1 {
-    background-image: url("../images/bg-finish.webp");
-    background-size: cover;
-    background-position: center;
-    &__header {
-      font-family: "Gotham-Book";
-      text-transform: uppercase;
-      font-size: 2.2rem;
-      margin-bottom: 2rem;
-      strong {
-        font-family: "Gotham-Black";
-      }
-      span {
-        font-size: 2.6rem;
-      }
+        &__logo {
+            max-width: 70%;
+        }
     }
-    &__logo {
-      max-height: 100px;
-      width: auto;
-      margin-bottom: 2rem;
-    }
-    &__pack {
-      scale: 1;
-      transition: all 200ms ease-in-out;
-      min-width: 250px;
-      &:hover {
-        scale: 1.05;
-      }
-    }
-  }
-
-  .es-finish--2 {
-    &__flexCtn {
-        row-gap: 5px;
-    }
-    &__single {
-      background-image: url("../images/bg-item-finish.webp");
-      background-size: cover;
-      background-position: center;
-        min-width: 130px;
-        max-width: 200px;
-       min-height: 130px;
-       max-height: 200px;
-      aspect-ratio: 1;
-      &:hover .es-finish--2__img {
-        scale: 1.1;
-      }
-      p {
-        margin-bottom: unset;
-        font-size: 0.8rem;
-      }
-    }
-    &__img {
-      min-height: 90px;
-      scale: 1;
-      transition: all 200ms ease-in-out;
-    }
-  }
-
-  .es-finish--3 {
-    &__header {
-      font-family: "Gotham-Book";
-      strong {
-        font-family: "Gotham-Black";
-      }
-    }
-    &__single {
-      width: 25%;
-      opacity: 0.8;
-      transform: all 200ms ease-in;
-      &:hover .es-finish--3__icon {
-        scale: 1.05;
-      }
-      &:hover {
-        opacity: 1;
-      }
-    }
-    &__packshotCtn {
-      position: relative;
-    }
-    &__packshot {
-      scale: 1;
-      transition: all 200ms ease-in-out;
-      &:hover .es-finish--3__badge {
-        scale: 1.1;
-      }
-    }
-    &__badge {
-      position: absolute;
-      top: 0;
-      right: 0;
-      max-width: 60%;
-      scale: 1;
-    }
-
-    &__icon {
-      height: 80px;
-      scale: 1;
-    }
-    &__text {
-      font-family: "Open Sans", sans-serif;
-    }
-  }
-  .es-finish--4 {
-    &__header {
-        font-family: "Gotham-Book";
-      strong {
-        font-family: "Metropolis-Black";
-      }
-    }
-    &__logo {
-        max-width: 70%;
-    }
-  }
 }

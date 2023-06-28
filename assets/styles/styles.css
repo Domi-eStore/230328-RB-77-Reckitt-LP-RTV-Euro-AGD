@@ -32,6 +32,17 @@
     transform-origin: center;
   }
 }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
 /* main styles */
 #es-rc #es-rc-content [data-es-rc] {
   font-family: "Metropolis-Black";
@@ -124,6 +135,7 @@
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__Ctn {
   min-height: 400px;
   aspect-ratio: 400/550;
+  overflow: hidden;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--tab__header {
   position: relative;
@@ -545,6 +557,11 @@
 #es-rc #es-rc-content [data-es-rc] .es-finish--4__packs {
   width: 80%;
   max-width: 500px;
+  scale: 1;
+  transition: all 200ms ease-in-out;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--4__packs:hover {
+  scale: 1.1;
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content [data-es-rc] .es-finish--4 {
@@ -568,6 +585,7 @@
   background-repeat: no-repeat;
   font-family: "Metropolis-Black";
   text-transform: uppercase;
+  overflow: hidden;
 }
 #es-rc #es-rc-content [data-es-rc] .es-pranie--1__header {
   font-size: 2.7rem;
@@ -631,6 +649,8 @@
   background-repeat: no-repeat;
   font-family: "Metropolis-Black";
   text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
 }
 #es-rc #es-rc-content [data-es-rc] .es-pranie--3__logo {
   max-width: 150px;
@@ -658,6 +678,7 @@
     display: block;
     position: absolute;
     left: 43%;
+    top: 17%;
     max-width: 100px;
   }
 }
@@ -670,7 +691,7 @@
 @media (min-width: 992px) {
   #es-rc #es-rc-content [data-es-rc] .es-pranie--3__badge {
     max-width: 150px;
-    bottom: 22%;
+    left: 40%;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-pranie--4__flexCtn {
@@ -680,8 +701,11 @@
   min-width: 130px;
   max-width: 200px;
 }
-#es-rc #es-rc-content [data-es-rc] .es-pranie--4__single:hover .es-finish--2__img {
+#es-rc #es-rc-content [data-es-rc] .es-pranie--4__single:hover .es-pranie--4__img {
   scale: 1.1;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 #es-rc #es-rc-content [data-es-rc] .es-pranie--4__single p {
   text-transform: uppercase;
@@ -703,6 +727,95 @@
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content [data-es-rc] .es-pranie--4__single p {
+    height: 4.2rem;
+  }
+}
+#es-rc #es-rc-content [data-es-rc] .es-pranie--5 {
+  background-image: url("../images/woolite-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Metropolis-Black";
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+}
+#es-rc #es-rc-content [data-es-rc] .es-pranie--5__logo {
+  max-width: 150px;
+}
+#es-rc #es-rc-content [data-es-rc] .es-pranie--5__header {
+  margin-block: 0.5rem;
+  color: white;
+}
+#es-rc #es-rc-content [data-es-rc] .es-pranie--5__badge {
+  display: none;
+}
+#es-rc #es-rc-content [data-es-rc] .es-pranie--5__pack {
+  scale: 1;
+  transition: all 200ms ease-in-out;
+  min-width: 250px;
+}
+#es-rc #es-rc-content [data-es-rc] .es-pranie--5__pack:hover {
+  scale: 1.05;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-pranie--5__header {
+    font-size: 1.2rem;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-pranie--5__badge {
+    display: block;
+    position: absolute;
+    left: 43%;
+    top: 17%;
+    max-width: 100px;
+  }
+}
+@media (min-width: 800px) {
+  #es-rc #es-rc-content [data-es-rc] .es-pranie--5__logo {
+    max-width: 200px;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  #es-rc #es-rc-content [data-es-rc] .es-pranie--5__badge {
+    max-width: 200px;
+    top: 8%;
+    left: 40%;
+  }
+}
+#es-rc #es-rc-content [data-es-rc] .es-pranie--6__flexCtn {
+  row-gap: 5px;
+}
+#es-rc #es-rc-content [data-es-rc] .es-pranie--6__single {
+  min-width: 130px;
+  max-width: 200px;
+}
+#es-rc #es-rc-content [data-es-rc] .es-pranie--6__single:hover .es-pranie--6__img {
+  scale: 1.1;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+#es-rc #es-rc-content [data-es-rc] .es-pranie--6__single p {
+  text-transform: uppercase;
+  color: #202f77;
+  margin-bottom: unset;
+  font-size: 0.8rem;
+  height: 2.2rem;
+}
+#es-rc #es-rc-content [data-es-rc] .es-pranie--6__img {
+  max-width: 100px;
+  scale: 1;
+  transition: all 200ms ease-in-out;
+}
+@media (min-width: 576px) {
+  #es-rc #es-rc-content [data-es-rc] .es-pranie--6__single p {
+    font-size: 1rem;
+    height: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content [data-es-rc] .es-pranie--6__single p {
     height: 4.2rem;
   }
 }/*# sourceMappingURL=styles.css.map */

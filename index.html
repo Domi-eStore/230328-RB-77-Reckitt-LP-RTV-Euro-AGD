@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reckitt landing page</title>
@@ -11,591 +12,447 @@
     <link href="./dist/css/esstrap-full.min.css" rel="stylesheet" />
     <!-- custom CSS -->
     <link href="./assets/styles/styles.css" rel="stylesheet" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="es-rc">
-      <div id="es-rc-content">
-        <div data-es-rc>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                  <div class="container-fluid justify-content-end">
-                    <button
-                      class="navbar-toggler border-0"
-                      type="button"
-                      data-esbs-toggle="collapse"
-                      data-esbs-target="#navbarNavDropdown"
-                      aria-controls="navbarNavDropdown"
-                      aria-expanded="false"
-                      aria-label="Toggle navigation"
-                    >
-                      <span class="navbar-toggler-icon es-mobile-menu"></span>
-                    </button>
-                    <div
-                      class="collapse navbar-collapse justify-content-center"
-                      id="navbarNavDropdown"
-                    >
-                      <div
-                        class="nav nav-tabs p-3 justify-content-center"
-                        id="nav-tab"
-                        role="tablist"
-                      >
-                        <button
-                          class="nav-link active"
-                          id="nav-home-tab"
-                          data-esbs-toggle="tab"
-                          data-esbs-target="#nav-home"
-                          type="button"
-                          role="tab"
-                          aria-controls="nav-home"
-                          aria-selected="true"
-                        >
-                          Strona główna
-                        </button>
-                        <div class="es-dot"></div>
-                        <button
-                          class="nav-link"
-                          id="nav-profile-tab"
-                          data-esbs-toggle="tab"
-                          data-esbs-target="#nav-profile"
-                          type="button"
-                          role="tab"
-                          aria-controls="nav-profile"
-                          aria-selected="false"
-                        >
-                          Strefa finish
-                        </button>
-                        <div class="es-dot"></div>
-                        <button
-                          class="nav-link"
-                          id="nav-contact-tab"
-                          data-esbs-toggle="tab"
-                          data-esbs-target="#nav-contact"
-                          type="button"
-                          role="tab"
-                          aria-controls="nav-contact"
-                          aria-selected="false"
-                        >
-                          Strefa prania
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </nav>
-
-                <div class="tab-content" id="nav-tabContent">
-                  <div
-                    class="tab-pane fade show active es-main--tab"
-                    id="nav-home"
-                    role="tabpanel"
-                    aria-labelledby="nav-home-tab"
-                  >
-                    <section class="container-fluid es-main--1">
-                      <div class="row es-main--tab__Ctn">
-                        <div class="col col-sm-6 d-flex flex-column flex-wrap align-content-center justify-content-center es-main--1__Ctn--L">
-                          <header
-                            class="text-center es-main--tab__header es-main--1__header"
-                          >
-                            <h2>
-                              <em>Wiosenne</em> wietrzenie
-                              <span>magazynów</span>
-                            </h2>
-                            <img
-                              class="img-fluid es-main--1__bg-icon"
-                              src="./assets/images/leaf.webp"
-                            />
-                          </header>
-                          <img
-                            class="img-fluid es-main--1__logo"
-                            src="./assets/images/finish-logo.webp"
-                          />
-                        </div>
-                        <div
-                          class="col col-sm-6 d-flex flex-column align-items-center justify-content-end"
-                        >
-                          <div class="es-main--1__Ctn">
-                            <img
-                              class="img-fluid d-block mx-auto es-main--1__pack"
-                              src="./assets/images/main-finish-packs.webp"
-                            />
-                            <img
-                              class="img-fluid es-main--1__shine"
-                              src="./assets/images/blysk.webp"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-
-                    <!-- wstawić karuzelę produktową ze sklepu -->
-                    <!-- usunąć kod między start i end i wstawić swój -->
-                    <!-- start -->
-                    <div class="row bg-white p-4">
-                      <div
-                        class="col-6 mx-auto"
-                        style="border: 1px solid orange"
-                      >
-                        <h4 class="text-center p-2 m-0">
-                          karuzela produktowa wietrzenie
-                        </h4>
-                      </div>
-                    </div>
-                    <!-- end -->
-
-                    <section class="container-fluid es-main--2">
-                      <div class="row es-main--tab__Ctn">
-                        <div class="col col-sm-6 col col-sm-6 d-flex flex-column flex-wrap align-content-center justify-content-center">
-                          <header
-                            class="text-center es-main--tab__header es-main--2__header"
-                          >
-                            <h2>
-                              <em>Poznaj</em> nasze
-                              <span>bestsellery</span>
-                            </h2>
-                            <img
-                              class="img-fluid es-main--2__bg-icon"
-                              src="./assets/images/check.webp"
-                            />
-                          </header>
-                        </div>
-                        <div
-                          class="col cold-sm-6 d-flex flex-column align-items-center justify-content-end"
-                        >
-                          <div class="es-main--2__Ctn">
-                            <img
-                              class="img-fluid d-block mx-auto es-main--2__pack"
-                              src="./assets/images/main-woolite-packs.webp"
-                            />
-                            <img
-                              class="img-fluid es-main--2__shine"
-                              src="./assets/images/blysk.webp"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                    <!-- wstawić karuzelę produktową ze sklepu -->
-                    <!-- usunąć kod między start i end i wstawić swój -->
-                    <!-- start -->
-                    <div class="row bg-white p-4">
-                      <div
-                        class="col-6 mx-auto"
-                        style="border: 1px solid orange"
-                      >
-                        <h4 class="text-center p-2 m-0">
-                          karuzela produktowa bestsellery
-                        </h4>
-                      </div>
-                    </div>
-                    <!-- end -->
-
-                    <section class="container-fluid es-main--3">
-                      <div class="row es-main--tab__Ctn">
-                        <div class="col col-sm-6 col col-sm-6 d-flex flex-column flex-wrap align-content-center justify-content-center">
-                          <header
-                            class="text-center es-main--tab__header es-main--3__header"
-                          >
-                            <h2>
-                              <em>Odkryj</em> nasze
-                              <span>nowości</span>
-                            </h2>
-                            <img
-                              class="img-fluid es-main--3__bg-icon"
-                              src="./assets/images/star.webp"
-                            />
-                          </header>
-                        </div>
-                        <div class="col col-sm-6 d-flex flex-column align-items-center justify-content-end">
-                          <div class="es-main--3__Ctn">
-                            <img
-                              class="img-fluid d-block mx-auto es-main--3__pack"
-                              src="./assets/images/main-new-packs.webp"
-                            />
-                            <img
-                              class="img-fluid es-main--3__shine"
-                              src="./assets/images/blysk.webp"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                    <!-- wstawić karuzelę produktową ze sklepu -->
-                    <!-- usunąć kod między start i end i wstawić swój -->
-                    <!-- start -->
-                    <div class="row bg-white p-4">
-                      <div
-                        class="col-6 mx-auto"
-                        style="border: 1px solid orange"
-                      >
-                        <h4 class="text-center p-2 m-0">
-                          karuzela produktowa nowosci
-                        </h4>
-                      </div>
-                    </div>
-                    <!-- end -->
-                  </div>
-
-                  <div
-                    class="tab-pane fade es-finish--tab"
-                    id="nav-profile"
-                    role="tabpanel"
-                    aria-labelledby="nav-profile-tab"
-                  >
-                    <section class="container-fluid p-3 es-finish--1 d-flex flex-xolumn align-items-center">
-                      <div class="row d-flex flex-xolumn align-items-end">
-                        <div class="col col-sm-6">
-                          <div class="row">
-                            <img
-                              class="img-fluid mx-auto es-finish--1__logo"
-                              src="./assets/images/finish-logo.webp"
-                            />
-                          </div>
-                          <div class="row">
-                            <h2 class="es-finish--1__header es-header-gradient text-center">
-                              <strong>perfekcyjne <span>rezultaty</span></strong> zmywania
-                            </h2>
-                          </div>
-                        </div>
-                        <div class="col col-sm-6">
-                          <img
-                            class="img-fluid es-finish--1__pack"
-                            src="./assets/images/finish-packshots.webp"
-                          />
-                        </div>
-                      </div>
-                    </section>
-                    <section class="container-fluid p-3 es-finish--2">
-                      <div
-                        class="row d-flex flex-row align-items-center justify-content-around es-finish--2__flexCtn"
-                      >
-                        <div class="col-6 col-md-3 d-flex justify-content-center">
-                            <a
-                          href="https://www.euro.com.pl/produkty-do-zmywarek,_Finish,rodzaj!kapsulki-do-zmywania.bhtml"
-                          target="_blank"
-                          class="col d-flex flex-column align-items-center justify-content-around p-2 es-finish--2__single"
-                        >
-                          <img
-                            class="img-fluid p-1 es-finish--2__img"
-                            src="./assets/images/item-finish-kapsulki.webp"
-                          />
-                          <p class="text-center es-header-gradient">kapsułki</p>
-                        </a>
-                        </div>
-                        <div class="col-6 col-md-3 d-flex justify-content-center">
-<a
-                          href="https://www.euro.com.pl/produkty-do-zmywarek,_Finish,rodzaj!nablyszczacz:odswiezacz-do-zmywarek:sol-zmiekczajaca:6:8.bhtml"
-                          target="_blank"
-                          class="col d-flex flex-column align-items-center justify-content-around p-2 es-finish--2__single"
-                        >
-                          <img
-                            class="img-fluid p-1 es-finish--2__img"
-                            src="./assets/images/item-finish-dodatki.webp"
-                          />
-                          <p class="text-center es-header-gradient">dodatki</p>
-                        </a>
-                        </div>
-                        <div class="col-6 col-md-3 d-flex justify-content-center">
-<a
-                          href="https://www.euro.com.pl/produkty-do-zmywarek,_Finish,rodzaj!zestaw-startowy.bhtml"
-                          target="_blank"
-                          class="col d-flex flex-column align-items-center justify-content-around p-2 es-finish--2__single"
-                        >
-                          <img
-                            class="img-fluid p-1 es-finish--2__img"
-                            src="./assets/images/item-finish-zestawy.webp"
-                          />
-                          <p class="text-center es-header-gradient">zestawy</p>
-                        </a>
-                        </div>
-                        <div class="col-6 col-md-3 d-flex justify-content-center">
-<a
-                          href="https://www.euro.com.pl/produkty-do-zmywarek,_Finish,rodzaj!kapsulki-do-zmywania,od50,d3.bhtml"
-                          target="_blank"
-                          class="col d-flex flex-column align-items-center justify-content-around p-2 es-finish--2__single"
-                        >
-                          <img
-                            class="img-fluid p-1 es-finish--2__img"
-                            src="./assets/images/item-finish-duze-opakowania.webp"
-                          />
-                          <p class="text-center es-header-gradient">
-                            duże opakowania
-                          </p>
-                        </a>
-                        </div>
-                        
-                        
-                        
-                      </div>
-                    </section>
-                    <section class="container-fluid p-3 es-finish--3">
-                      <div
-                        id="carouselExampleControls"
-                        class="carousel slide"
-                        data-esbs-ride="carousel"
-                      >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div
-                              class="col d-flex flex-column align-items-center es-carousel__slide"
-                            >
-                              <h3
-                                class="es-header-gradient es-finish--3__header text-center"
-                              >
-                                Poznaj <strong>ultimate plus</strong>
-                              </h3>
-                              <img
-                                class="img-fluid p-2"
-                                src="./assets/images/placeholder.png"
-                              />
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div
-                              class="col d-flex flex-column align-items-center es-carousel__slide"
-                            >
-                              <h3
-                                class="es-header-gradient es-finish--3__header text-center"
-                              >
-                                Zalety <strong>Finish ultimate </strong><strong>plus</strong>
-                              </h3>
-                              <div class="row">
-                                <div class="col col-12 col-lg-4 d-lg-flex flex-column align-items-center justify-content-center">
-                                  <div class="es-finish--3__packshotCtn">
-                                    <img
-                                      class="img-fluid es-finish--3__packshot"
-                                      src="./assets/images/finish-pack.webp"
-                                    />
-                                    <img
-                                      class="img-fluid es-finish--3__badge"
-                                      src="./assets/images/lupa.webp"
-                                    />
-                                    
-                                  </div>
-                                </div>
-                                
-                                <div class="col col-12 col-lg-8">
-                                  <div class="row-md d-md-flex flex-wrap flex-row justify-content-center gap-2">
-                                    <div
-                                      class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-hide es-finish--3__single"
-                                    >
-                                      <img
-                                        class="img-fluid es-finish--3__icon"
-                                        src="./assets/images/f-icon-1.webp"
-                                      />
-                                      <p
-                                        class="text-end text-md-center es-header-gradient es-finish--3__text"
-                                      >
-                                        technologia cyclesync<sup
-                                          class="es-header-gradient es-sup"
-                                          >TM</sup
-                                        >
-                                      </p>
-                                    </div>
-                                    <div
-                                      class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single"
-                                    >
-                                      <img
-                                        class="img-fluid es-finish--3__icon"
-                                        src="./assets/images/f-icon-2.webp"
-                                      />
-                                      <p
-                                        class="text-end text-md-center es-header-gradient es-finish--3__text"
-                                      >
-                                        skutecznie usuwa przypalone zabrudzenia
-                                      </p>
-                                    </div>
-                                    <div
-                                      class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single"
-                                    >
-                                      <img
-                                        class="img-fluid es-finish--3__icon"
-                                        src="./assets/images/f-icon-3.webp"
-                                      />
-                                      <p
-                                        class="text-end text-md-center es-header-gradient es-finish--3__text"
-                                      >
-                                        działa bez wstępnego namaczania
-                                      </p>
-                                    </div>
-                                    <div
-                                      class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single"
-                                    >
-                                      <img
-                                        class="img-fluid es-finish--3__icon"
-                                        src="./assets/images/f-icon-4.webp"
-                                      />
-                                      <p
-                                        class="text-end text-md-center es-header-gradient es-finish--3__text"
-                                      >
-                                        likwiduje osadzony tłuszcz
-                                      </p>
-                                    </div>
-                                    <div
-                                      class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single"
-                                    >
-                                      <img
-                                        class="img-fluid es-finish--3__icon"
-                                        src="./assets/images/f-icon-5.webp"
-                                      />
-                                      <p
-                                        class="text-end text-md-center es-header-gradient es-finish--3__text"
-                                      >
-                                        zapewnia doskonałe czyszczenie i&nbsp;diamentowy połysk
-                                      </p>
-                                    </div>
-                                    <div
-                                      class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single"
-                                    >
-                                      <img
-                                        class="img-fluid es-finish--3__icon"
-                                        src="./assets/images/f-icon-6.webp"
-                                      />
-                                      <p
-                                        class="text-end text-md-center es-header-gradient es-finish--3__text"
-                                      >
-                                        chroni naczynia&nbsp;i delikatne srebro
-                                      </p>
-                                    </div>
-                                    <div
-                                      class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single"
-                                    >
-                                      <img
-                                        class="img-fluid es-finish--3__icon"
-                                        src="./assets/images/f-icon-7.webp"
-                                      />
-                                      <p
-                                        class="text-end text-md-center es-header-gradient es-finish--3__text"
-                                      >
-                                        działa w niskich temperaturach
-                                      </p>
-                                    </div>
-                                    <div
-                                      class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single"
-                                    >
-                                      <img
-                                        class="img-fluid es-finish--3__icon"
-                                        src="./assets/images/f-icon-8.webp"
-                                      />
-                                      <p
-                                        class="text-end text-md-center es-header-gradient es-finish--3__text"
-                                      >
-                                        skuteczny w krótkich cyklach
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <button
-                          class="carousel-control-prev"
-                          type="button"
-                          data-esbs-target="#carouselExampleControls"
-                          data-esbs-slide="prev"
-                        >
-                          <span
-                            class="carousel-control-prev-icon es-carousel__btn es-carousel__btn--prev"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                          class="carousel-control-next"
-                          type="button"
-                          data-esbs-target="#carouselExampleControls"
-                          data-esbs-slide="next"
-                        >
-                          <span
-                            class="carousel-control-next-icon es-carousel__btn es-carousel__btn--next"
-                            aria-hidden="true"
-                            ><span class="es-controls--next"></span
-                          ></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </section>
-
-                    <!-- wstawić karuzelę produktową ze sklepu -->
-                    <!-- usunąć kod między start i end i wstawić swój -->
-                    <!-- start -->
-                    <div class="row bg-white p-4">
-                        <div
-                          class="col-6 mx-auto"
-                          style="border: 1px solid orange"
-                        >
-                          <h4 class="text-center p-2 m-0">
-                            karuzela produktowa
-                          </h4>
-                        </div>
-                      </div>
-                      <!-- end -->
-
-                    <section class="container-fluid p-2 es-finish--4">
-                      <div class="row">
-                        <div class="col d-flex flex-column align-content-center">
-                          <h3 class="es-header-gradient es-finish--4__header text-center">
-                            <strong>Czystość i ochrona zmywarki</strong> oraz
-                            suche i lśniące naczynia
-                          </h3>
-                          <img
-                            class="img-fluid d-block mx-auto es-finish--4__logo"
-                            src="./assets/images/finish-logo.webp"
-                          />
-                          <img class="img-fluid" />
-                        </div>
-                      </div>
-                    </section>
-
-                    <!-- wstawić karuzelę produktową ze sklepu -->
-                    <!-- usunąć kod między start i end i wstawić swój -->
-                    <!-- start -->
-                    <div class="row bg-white p-4">
-                        <div
-                          class="col-6 mx-auto"
-                          style="border: 1px solid orange"
-                        >
-                          <h4 class="text-center p-2 m-0">
-                            karuzela produktowa
-                          </h4>
-                        </div>
-                      </div>
-                      <!-- end -->
-
-                    <section class="container-fluid p-2 es-finish--5">
-                      <div class="row">
+        <div id="es-rc-content">
+            <div data-es-rc>
+                <div class="container-fluid">
+                    <div class="row">
                         <div class="col">
-                          <header class="row">
-                            <h3 class="es-header-gradient text-center">
-                              Odkryj zalety naszych <strong>detergentów</strong>
-                            </h3>
-                          </header>
-                          <div class="row">
-                            <table>
-                              <!-- wstawić tabele -->
-                            </table>
-                          </div>
+                            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                                <div class="container-fluid justify-content-end">
+                                    <button class="navbar-toggler border-0" type="button" data-esbs-toggle="collapse"
+                                        data-esbs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon es-mobile-menu"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                                        <div class="nav nav-tabs p-3 justify-content-center" id="nav-tab"
+                                            role="tablist">
+                                            <button class="nav-link active" id="nav-home-tab" data-esbs-toggle="tab"
+                                                data-esbs-target="#nav-home" type="button" role="tab"
+                                                aria-controls="nav-home" aria-selected="true">
+                                                Strona główna
+                                            </button>
+                                            <div class="es-dot"></div>
+                                            <button class="nav-link" id="nav-profile-tab" data-esbs-toggle="tab"
+                                                data-esbs-target="#nav-profile" type="button" role="tab"
+                                                aria-controls="nav-profile" aria-selected="false">
+                                                Strefa finish
+                                            </button>
+                                            <div class="es-dot"></div>
+                                            <button class="nav-link" id="nav-contact-tab" data-esbs-toggle="tab"
+                                                data-esbs-target="#nav-contact" type="button" role="tab"
+                                                aria-controls="nav-contact" aria-selected="false">
+                                                Strefa prania
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active es-main--tab" id="nav-home" role="tabpanel"
+                                    aria-labelledby="nav-home-tab">
+                                    <section class="container-fluid es-main--1">
+                                        <div class="row es-main--tab__Ctn">
+                                            <div
+                                                class="col col-sm-6 d-flex flex-column flex-wrap align-content-center justify-content-center es-main--1__Ctn--L">
+                                                <header class="text-center es-main--tab__header es-main--1__header">
+                                                    <h2>
+                                                        <em>Wiosenne</em> wietrzenie
+                                                        <span>magazynów</span>
+                                                    </h2>
+                                                    <img class="img-fluid es-main--1__bg-icon"
+                                                        src="./assets/images/leaf.webp" />
+                                                </header>
+                                                <img class="img-fluid es-main--1__logo"
+                                                    src="./assets/images/finish-logo.webp" />
+                                            </div>
+                                            <div
+                                                class="col col-sm-6 d-flex flex-column align-items-center justify-content-end">
+                                                <div class="es-main--1__Ctn">
+                                                    <img class="img-fluid d-block mx-auto es-main--1__pack"
+                                                        src="./assets/images/main-finish-packs.webp" />
+                                                    <img class="img-fluid es-main--1__shine"
+                                                        src="./assets/images/blysk.webp" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <!-- wstawić karuzelę produktową ze sklepu -->
+                                    <!-- usunąć kod między start i end i wstawić swój -->
+                                    <!-- start -->
+                                    <div class="row bg-white p-4">
+                                        <div class="col-6 mx-auto" style="border: 1px solid orange">
+                                            <h4 class="text-center p-2 m-0">
+                                                karuzela produktowa wietrzenie
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+
+                                    <section class="container-fluid es-main--2">
+                                        <div class="row es-main--tab__Ctn">
+                                            <div
+                                                class="col col-sm-6 col col-sm-6 d-flex flex-column flex-wrap align-content-center justify-content-center">
+                                                <header class="text-center es-main--tab__header es-main--2__header">
+                                                    <h2>
+                                                        <em>Poznaj</em> nasze
+                                                        <span>bestsellery</span>
+                                                    </h2>
+                                                    <img class="img-fluid es-main--2__bg-icon"
+                                                        src="./assets/images/check.webp" />
+                                                </header>
+                                            </div>
+                                            <div
+                                                class="col cold-sm-6 d-flex flex-column align-items-center justify-content-end">
+                                                <div class="es-main--2__Ctn">
+                                                    <img class="img-fluid d-block mx-auto es-main--2__pack"
+                                                        src="./assets/images/main-woolite-packs.webp" />
+                                                    <img class="img-fluid es-main--2__shine"
+                                                        src="./assets/images/blysk.webp" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- wstawić karuzelę produktową ze sklepu -->
+                                    <!-- usunąć kod między start i end i wstawić swój -->
+                                    <!-- start -->
+                                    <div class="row bg-white p-4">
+                                        <div class="col-6 mx-auto" style="border: 1px solid orange">
+                                            <h4 class="text-center p-2 m-0">
+                                                karuzela produktowa bestsellery
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+
+                                    <section class="container-fluid es-main--3">
+                                        <div class="row es-main--tab__Ctn">
+                                            <div
+                                                class="col col-sm-6 col col-sm-6 d-flex flex-column flex-wrap align-content-center justify-content-center">
+                                                <header class="text-center es-main--tab__header es-main--3__header">
+                                                    <h2>
+                                                        <em>Odkryj</em> nasze
+                                                        <span>nowości</span>
+                                                    </h2>
+                                                    <img class="img-fluid es-main--3__bg-icon"
+                                                        src="./assets/images/star.webp" />
+                                                </header>
+                                            </div>
+                                            <div
+                                                class="col col-sm-6 d-flex flex-column align-items-center justify-content-end">
+                                                <div class="es-main--3__Ctn">
+                                                    <img class="img-fluid d-block mx-auto es-main--3__pack"
+                                                        src="./assets/images/main-new-packs.webp" />
+                                                    <img class="img-fluid es-main--3__shine"
+                                                        src="./assets/images/blysk.webp" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- wstawić karuzelę produktową ze sklepu -->
+                                    <!-- usunąć kod między start i end i wstawić swój -->
+                                    <!-- start -->
+                                    <div class="row bg-white p-4">
+                                        <div class="col-6 mx-auto" style="border: 1px solid orange">
+                                            <h4 class="text-center p-2 m-0">
+                                                karuzela produktowa nowosci
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+                                </div>
+
+                                <div class="tab-pane fade es-finish--tab" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-profile-tab">
+                                    <section
+                                        class="container-fluid p-3 es-finish--1 d-flex flex-xolumn align-items-center">
+                                        <div class="row d-flex flex-xolumn align-items-end">
+                                            <div class="col col-sm-6">
+                                                <div class="row">
+                                                    <img class="img-fluid mx-auto es-finish--1__logo"
+                                                        src="./assets/images/finish-logo.webp" />
+                                                </div>
+                                                <div class="row">
+                                                    <h2 class="es-finish--1__header es-header-gradient text-center">
+                                                        <strong>perfekcyjne <span>rezultaty</span></strong> zmywania
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="col col-sm-6">
+                                                <img class="img-fluid es-finish--1__pack"
+                                                    src="./assets/images/finish-packshots.webp" />
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="container-fluid p-3 es-finish--2">
+                                        <div
+                                            class="row d-flex flex-row align-items-center justify-content-around es-finish--2__flexCtn">
+                                            <div class="col-6 col-md-3 d-flex justify-content-center">
+                                                <a href="https://www.euro.com.pl/produkty-do-zmywarek,_Finish,rodzaj!kapsulki-do-zmywania.bhtml"
+                                                    target="_blank"
+                                                    class="col d-flex flex-column align-items-center justify-content-around p-2 es-finish--2__single">
+                                                    <img class="img-fluid p-1 es-finish--2__img"
+                                                        src="./assets/images/item-finish-kapsulki.webp" />
+                                                    <p class="text-center es-header-gradient">kapsułki</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-3 d-flex justify-content-center">
+                                                <a href="https://www.euro.com.pl/produkty-do-zmywarek,_Finish,rodzaj!nablyszczacz:odswiezacz-do-zmywarek:sol-zmiekczajaca:6:8.bhtml"
+                                                    target="_blank"
+                                                    class="col d-flex flex-column align-items-center justify-content-around p-2 es-finish--2__single">
+                                                    <img class="img-fluid p-1 es-finish--2__img"
+                                                        src="./assets/images/item-finish-dodatki.webp" />
+                                                    <p class="text-center es-header-gradient">dodatki</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-3 d-flex justify-content-center">
+                                                <a href="https://www.euro.com.pl/produkty-do-zmywarek,_Finish,rodzaj!zestaw-startowy.bhtml"
+                                                    target="_blank"
+                                                    class="col d-flex flex-column align-items-center justify-content-around p-2 es-finish--2__single">
+                                                    <img class="img-fluid p-1 es-finish--2__img"
+                                                        src="./assets/images/item-finish-zestawy.webp" />
+                                                    <p class="text-center es-header-gradient">zestawy</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-3 d-flex justify-content-center">
+                                                <a href="https://www.euro.com.pl/produkty-do-zmywarek,_Finish,rodzaj!kapsulki-do-zmywania,od50,d3.bhtml"
+                                                    target="_blank"
+                                                    class="col d-flex flex-column align-items-center justify-content-around p-2 es-finish--2__single">
+                                                    <img class="img-fluid p-1 es-finish--2__img"
+                                                        src="./assets/images/item-finish-duze-opakowania.webp" />
+                                                    <p class="text-center es-header-gradient">
+                                                        duże opakowania
+                                                    </p>
+                                                </a>
+                                            </div>
+
+
+
+                                        </div>
+                                    </section>
+                                    <section class="container-fluid p-3 es-finish--3">
+                                        <div id="carouselExampleControls" class="carousel slide"
+                                            data-esbs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div
+                                                        class="col d-flex flex-column align-items-center es-carousel__slide">
+                                                        <h3 class="es-header-gradient es-finish--3__header text-center">
+                                                            Poznaj <strong>ultimate plus</strong>
+                                                        </h3>
+                                                        <img class="img-fluid p-2"
+                                                            src="./assets/images/placeholder.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div
+                                                        class="col d-flex flex-column align-items-center es-carousel__slide">
+                                                        <h3 class="es-header-gradient es-finish--3__header text-center">
+                                                            Zalety <strong>Finish ultimate
+                                                            </strong><strong>plus</strong>
+                                                        </h3>
+                                                        <div class="row">
+                                                            <div
+                                                                class="col col-12 col-lg-4 d-lg-flex flex-column align-items-center justify-content-center">
+                                                                <div class="es-finish--3__packshotCtn">
+                                                                    <img class="img-fluid es-finish--3__packshot"
+                                                                        src="./assets/images/finish-pack.webp" />
+                                                                    <img class="img-fluid es-finish--3__badge"
+                                                                        src="./assets/images/lupa.webp" />
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col col-12 col-lg-8">
+                                                                <div
+                                                                    class="row-md d-md-flex flex-wrap flex-row justify-content-center gap-2">
+                                                                    <div
+                                                                        class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-hide es-finish--3__single">
+                                                                        <img class="img-fluid es-finish--3__icon"
+                                                                            src="./assets/images/f-icon-1.webp" />
+                                                                        <p
+                                                                            class="text-end text-md-center es-header-gradient es-finish--3__text">
+                                                                            technologia cyclesync<sup
+                                                                                class="es-header-gradient es-sup">TM</sup>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single">
+                                                                        <img class="img-fluid es-finish--3__icon"
+                                                                            src="./assets/images/f-icon-2.webp" />
+                                                                        <p
+                                                                            class="text-end text-md-center es-header-gradient es-finish--3__text">
+                                                                            skutecznie usuwa przypalone zabrudzenia
+                                                                        </p>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single">
+                                                                        <img class="img-fluid es-finish--3__icon"
+                                                                            src="./assets/images/f-icon-3.webp" />
+                                                                        <p
+                                                                            class="text-end text-md-center es-header-gradient es-finish--3__text">
+                                                                            działa bez wstępnego namaczania
+                                                                        </p>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single">
+                                                                        <img class="img-fluid es-finish--3__icon"
+                                                                            src="./assets/images/f-icon-4.webp" />
+                                                                        <p
+                                                                            class="text-end text-md-center es-header-gradient es-finish--3__text">
+                                                                            likwiduje osadzony tłuszcz
+                                                                        </p>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single">
+                                                                        <img class="img-fluid es-finish--3__icon"
+                                                                            src="./assets/images/f-icon-5.webp" />
+                                                                        <p
+                                                                            class="text-end text-md-center es-header-gradient es-finish--3__text">
+                                                                            zapewnia doskonałe czyszczenie
+                                                                            i&nbsp;diamentowy połysk
+                                                                        </p>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single">
+                                                                        <img class="img-fluid es-finish--3__icon"
+                                                                            src="./assets/images/f-icon-6.webp" />
+                                                                        <p
+                                                                            class="text-end text-md-center es-header-gradient es-finish--3__text">
+                                                                            chroni naczynia&nbsp;i delikatne srebro
+                                                                        </p>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single">
+                                                                        <img class="img-fluid es-finish--3__icon"
+                                                                            src="./assets/images/f-icon-7.webp" />
+                                                                        <p
+                                                                            class="text-end text-md-center es-header-gradient es-finish--3__text">
+                                                                            działa w niskich temperaturach
+                                                                        </p>
+                                                                    </div>
+                                                                    <div
+                                                                        class="col col-md-3 d-flex flex-row flex-md-column align-items-center justify-content-between justify-content-md-start es-finish--3__single">
+                                                                        <img class="img-fluid es-finish--3__icon"
+                                                                            src="./assets/images/f-icon-8.webp" />
+                                                                        <p
+                                                                            class="text-end text-md-center es-header-gradient es-finish--3__text">
+                                                                            skuteczny w krótkich cyklach
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-esbs-target="#carouselExampleControls" data-esbs-slide="prev">
+                                                <span
+                                                    class="carousel-control-prev-icon es-carousel__btn es-carousel__btn--prev"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-esbs-target="#carouselExampleControls" data-esbs-slide="next">
+                                                <span
+                                                    class="carousel-control-next-icon es-carousel__btn es-carousel__btn--next"
+                                                    aria-hidden="true"><span class="es-controls--next"></span></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </section>
+
+                                    <!-- wstawić karuzelę produktową ze sklepu -->
+                                    <!-- usunąć kod między start i end i wstawić swój -->
+                                    <!-- start -->
+                                    <div class="row bg-white p-4">
+                                        <div class="col-6 mx-auto" style="border: 1px solid orange">
+                                            <h4 class="text-center p-2 m-0">
+                                                karuzela produktowa
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+
+                                    <section
+                                        class="container-fluid p-2 d-flex flex-column justify-content-center justify-content-md-end es-finish--4">
+                                        <div class="row">
+                                            <div class="col d-flex flex-column align-content-center">
+                                                <div class="row">
+                                                    <h3 class="es-header-gradient es-finish--4__header text-center">
+                                                        <strong>Czystość i ochrona zmywarki</strong> oraz
+                                                        suche i lśniące naczynia
+                                                    </h3>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col col-12 col-md-4 d-md-flex flex-column align-items-start ps-md-5">
+                                                        <img class="img-fluid d-block mx-auto mx-md-0 es-finish--4__logo"
+                                                        src="./assets/images/finish-logo_2.webp" />
+                                                    <img class="img-fluid es-finish--4__badge"
+                                                        src="./assets/images/finish--4-badge.webp" />
+                                                    </div>
+                                                    <div class="col col-12 col-md-8 d-md-flex align-items-end align-items-md-center">
+                                                        <picture>
+                                                            <source srcset="./assets/images/finish--4-packs-desktop.webp" media="(min-width: 768px)">
+                                                            <img class="img-fluid d-block mx-auto es-finish--4__packs"
+                                                        src="./assets/images/finish--4-packs.webp" />
+                                                        </picture>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <!-- wstawić karuzelę produktową ze sklepu -->
+                                    <!-- usunąć kod między start i end i wstawić swój -->
+                                    <!-- start -->
+                                    <div class="row bg-white p-4">
+                                        <div class="col-6 mx-auto" style="border: 1px solid orange">
+                                            <h4 class="text-center p-2 m-0">
+                                                karuzela produktowa
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+
+                                    <section class="container-fluid p-2 es-finish--5">
+                                        <div class="row">
+                                            <div class="col">
+                                                <header class="row">
+                                                    <h3 class="es-header-gradient text-center">
+                                                        Odkryj zalety naszych <strong>detergentów</strong>
+                                                    </h3>
+                                                </header>
+                                                <div class="row">
+                                                    <table>
+                                                        <!-- wstawić tabele -->
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                    aria-labelledby="nav-contact-tab">
+                                    ...
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </section>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="nav-contact"
-                    role="tabpanel"
-                    aria-labelledby="nav-contact-tab"
-                  >
-                    ...
-                  </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
     <script src="./dist/js/esstrap.bundle.js" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>

@@ -512,12 +512,43 @@
     right: -20%;
   }
 }
+#es-rc #es-rc-content [data-es-rc] .es-finish--4 {
+  background-image: url("../images/bg-finish--4.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+}
 #es-rc #es-rc-content [data-es-rc] .es-finish--4__header {
   font-family: "Gotham-Book";
+  padding: 1rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--4__header strong {
   font-family: "Metropolis-Black";
+  display: block;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--4__logo {
-  max-width: 70%;
+  width: 60%;
+  max-width: 250px;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--4__badge {
+  display: none;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--4__packs {
+  width: 80%;
+  max-width: 500px;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content [data-es-rc] .es-finish--4 {
+    background-image: url("../images/bg-finish--4-desktop.webp");
+    min-height: unset;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-finish--4__badge {
+    display: block;
+    max-width: 250px;
+    margin-inline: auto;
+    margin-block: 2rem;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-finish--4__packs {
+    max-width: unset;
+  }
 }/*# sourceMappingURL=styles.css.map */

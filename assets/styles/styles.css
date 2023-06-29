@@ -48,6 +48,8 @@
   font-family: "Metropolis-Black";
   color: #0f2d5a;
   overflow-x: hidden;
+  max-width: 1200px;
+  margin: auto;
   /*******************************************************/
   /********************** main tab ***********************/
   /*******************************************************/
@@ -57,6 +59,8 @@
   /*******************************************************/
   /*********************** pranie ************************/
   /*******************************************************/
+  /* KEYFRAMES */
+  /* BUBBLE ANIMATIONS */
   /** woolite **/
   /** bryza **/
   /** vanish **/
@@ -694,12 +698,22 @@
 }
 @media (min-width: 1100px) {
   #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
-    background-size: 77% 100%;
+    background-size: 77% 102%;
   }
 }
-@media (min-width: 1150px) {
+@media (min-width: 1130px) {
   #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
-    background-size: 78% 100%;
+    background-size: 77% 103%;
+  }
+}
+@media (min-width: 1140px) {
+  #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
+    background-size: 78% 102%;
+  }
+}
+@media (min-width: 1190px) {
+  #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
+    background-size: 78.5% 105%;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-pranie--1 {
@@ -726,6 +740,111 @@
 }
 #es-rc #es-rc-content [data-es-rc] .es-pranie--1__pack:hover {
   scale: 1.05;
+}
+#es-rc #es-rc-content [data-es-rc] #es-background-wrap {
+  bottom: 0;
+  left: 0;
+  position: static;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+@keyframes animateBubble {
+  0% {
+    margin-top: 20%;
+  }
+  100% {
+    margin-top: -100%;
+  }
+}
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+#es-rc #es-rc-content [data-es-rc] .x1 {
+  animation: animateBubble 25s linear 1, sideWays 2s ease-in-out infinite alternate;
+  left: -5%;
+  top: 5%;
+  transform: scale(0.6);
+}
+#es-rc #es-rc-content [data-es-rc] .x2 {
+  animation: animateBubble 20s linear 1, sideWays 4s ease-in-out infinite alternate;
+  left: 5%;
+  top: 80%;
+  transform: scale(0.4);
+}
+#es-rc #es-rc-content [data-es-rc] .x3 {
+  animation: animateBubble 28s linear 1, sideWays 2s ease-in-out infinite alternate;
+  left: 10%;
+  top: 40%;
+  transform: scale(0.7);
+}
+#es-rc #es-rc-content [data-es-rc] .x4 {
+  animation: animateBubble 22s linear 1, sideWays 3s ease-in-out infinite alternate;
+  left: 20%;
+  top: 0;
+  transform: scale(0.3);
+}
+#es-rc #es-rc-content [data-es-rc] .x5 {
+  animation: animateBubble 29s linear 1, sideWays 4s ease-in-out infinite alternate;
+  left: 30%;
+  top: 50%;
+  transform: scale(0.5);
+}
+#es-rc #es-rc-content [data-es-rc] .x6 {
+  animation: animateBubble 21s linear 1, sideWays 2s ease-in-out infinite alternate;
+  left: 50%;
+  top: 0;
+  transform: scale(0.8);
+}
+#es-rc #es-rc-content [data-es-rc] .x7 {
+  animation: animateBubble 20s linear 1, sideWays 2s ease-in-out infinite alternate;
+  left: 65%;
+  top: 70%;
+  transform: scale(0.4);
+}
+#es-rc #es-rc-content [data-es-rc] .x8 {
+  animation: animateBubble 22s linear 2, sideWays 3s ease-in-out infinite alternate;
+  left: 80%;
+  top: 10%;
+  transform: scale(0.3);
+}
+#es-rc #es-rc-content [data-es-rc] .x9 {
+  animation: animateBubble 29s linear 1, sideWays 4s ease-in-out infinite alternate;
+  left: 90%;
+  top: 50%;
+  transform: scale(0.6);
+}
+#es-rc #es-rc-content [data-es-rc] .x10 {
+  animation: animateBubble 26s linear 1, sideWays 2s ease-in-out infinite alternate;
+  left: 80%;
+  top: 80%;
+  transform: scale(0.3);
+}
+#es-rc #es-rc-content [data-es-rc] .es-bubble {
+  border-radius: 50%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgb(255, 255, 255);
+  height: 200px;
+  position: absolute;
+  width: 200px;
+}
+#es-rc #es-rc-content [data-es-rc] .es-bubble:after { /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 12+ */ /* IE10+ */
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#80ffffff", endColorstr="#00ffffff",GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border-radius: 50%;
+  box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+  content: "";
+  height: 180px;
+  left: 10px;
+  position: absolute;
+  width: 180px;
+}
+#es-rc #es-rc-content [data-es-rc] .es-bubble:hover {
+  display: none;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-pranie--1 {
@@ -754,6 +873,11 @@
 #es-rc #es-rc-content [data-es-rc] .es-pranie--2__flexCtn {
   row-gap: 5px;
 }
+#es-rc #es-rc-content [data-es-rc] .es-pranie--2__img {
+  min-height: 90px;
+  scale: 1;
+  transition: all 200ms ease-in-out;
+}
 #es-rc #es-rc-content [data-es-rc] .es-pranie--2__single {
   background-image: url("../images/pranie-bg--1.webp");
   background-size: cover;
@@ -775,11 +899,6 @@
   color: #202f77;
   margin-bottom: unset;
   font-size: 1rem;
-}
-#es-rc #es-rc-content [data-es-rc] .es-pranie--2__img {
-  min-height: 90px;
-  scale: 1;
-  transition: all 200ms ease-in-out;
 }
 #es-rc #es-rc-content [data-es-rc] .es-pranie--3 {
   background-image: url("../images/lovela-bg.webp");

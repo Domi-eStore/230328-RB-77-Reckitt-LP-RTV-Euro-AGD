@@ -723,7 +723,6 @@ $es-color-gold: #e0c68c;
             &__badge {
                 display: block;
                 max-width: 250px;
-                margin-inline: auto;
                 margin-block: 2rem;
             }
 
@@ -740,11 +739,12 @@ $es-color-gold: #e0c68c;
     .es-pranie--1 {
         background-image: url("../images/bg-pranie-mobile.webp");
         background-size: cover;
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
         font-family: "Metropolis-Black";
         text-transform: uppercase;
         overflow: hidden;
+        min-height: 200px;
         &__header {
             font-size: 2.7rem;
             margin-bottom: 0;
@@ -765,10 +765,24 @@ $es-color-gold: #e0c68c;
     @media (min-width: 576px) {
         .es-pranie--1 {
             background-image: url("../images/bg-pranie-dekstop.webp");
+            background-position: center;
             &__header {
                 font-size: 2.1rem;
                 margin-bottom: 0;
                 margin-top: 0;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        .es-pranie--1 {
+            min-height: 250px;
+        }
+    }
+    @media (min-width: 992px) {
+        .es-pranie--1 {
+            min-height: 300px;
+            &__header {
+                font-size: 2.5rem;
             }
         }
     }
@@ -851,6 +865,11 @@ $es-color-gold: #e0c68c;
     }
     @media (min-width: 800px) {
         .es-pranie--3 {
+            min-height: 250px;
+            &__badge {
+                left: 40%;
+                max-width: 130px;
+            }
             &__logo {
                 max-width: 200px;
                 margin-bottom: 2rem;
@@ -859,9 +878,9 @@ $es-color-gold: #e0c68c;
     }
     @media (min-width: 992px) {
         .es-pranie--3 {
+            min-height: 300px;
             &__badge {
                 max-width: 150px;
-                left: 40%;
             }
         }
     }
@@ -959,12 +978,13 @@ $es-color-gold: #e0c68c;
             position: absolute;
             left: 43%;
             top: 17%;
-            max-width: 100px;
+            max-width: 150px;
         }
     }
 }
 @media (min-width: 800px) {
     .es-pranie--5 {
+        min-height: 250px;
         &__logo {
             max-width: 200px;
             margin-bottom: 2rem;
@@ -973,6 +993,7 @@ $es-color-gold: #e0c68c;
 }
 @media (min-width: 992px) {
     .es-pranie--5 {
+        min-height: 300px;
         &__badge {
             max-width: 200px;
             top: 8%;
@@ -1038,7 +1059,6 @@ $es-color-gold: #e0c68c;
 .es-pranie--7 {
     background-image: url("../images/bryza-bg.webp");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     font-family: "Metropolis-Black";
     text-transform: uppercase;
@@ -1063,6 +1083,7 @@ $es-color-gold: #e0c68c;
 
 @media (min-width: 576px) {
     .es-pranie--7 {
+        background-position: center;
         &__header {
             font-size: 1.2rem;
         }
@@ -1070,10 +1091,16 @@ $es-color-gold: #e0c68c;
 }
 @media (min-width: 800px) {
     .es-pranie--7 {
+        min-height: 250px;
         &__logo {
             max-width: 200px;
             margin-bottom: 2rem;
         }
+    }
+}
+@media (min-width: 992px) {
+    .es-pranie--7 {
+        min-height: 300px;
     }
 }
 
@@ -1126,6 +1153,212 @@ $es-color-gold: #e0c68c;
     &__single {
         p {
             height: 4.2rem;
+        }
+    }
+}
+}
+
+/** vanish **/
+.es-pranie--9 {
+    background-image: url("../images/vanish-bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Metropolis-Black";
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    &__logo {
+        max-width: 150px;
+    }
+    &__header {
+        margin-block: 0.5rem;
+        color: white;
+    }
+    &__pack {
+        scale: 1;
+        transition: all 200ms ease-in-out;
+        min-width: 250px;
+        &:hover {
+            scale: 1.05;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .es-pranie--9 {
+        background-position: center;
+        &__header {
+            font-size: 1.2rem;
+        }
+    }
+}
+@media (min-width: 800px) {
+    .es-pranie--9 {
+        min-height: 280px;
+        &__logo {
+            max-width: 200px;
+            margin-bottom: 2rem;
+        }
+        &__pack {
+            position: absolute;
+            bottom: 0;
+            max-width: 302px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .es-pranie--9 {
+        min-height: 320px;
+        &__pack {
+            max-width: 350px;
+        }
+    }
+}
+
+.es-pranie--10 {
+    &__flexCtn {
+        row-gap: 5px;
+    }
+    &__single {
+
+        min-width: 130px;
+        max-width: 200px;
+        &:hover .es-pranie--10__img {
+            scale: 1.1;
+            -webkit-animation-name: bounce; 
+        animation-name: bounce;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s; 
+            -webkit-animation-fill-mode: both; 
+            animation-fill-mode: both; 
+        }
+        p {
+            text-transform: uppercase;
+            color: $es-color-navy-pranie;
+            margin-bottom: unset;
+            font-size: 0.8rem;
+            height: 2.2rem;
+        }
+    }
+    &__img {
+        max-width: 100px;
+        scale: 1;
+        transition: all 200ms ease-in-out;
+    }
+}
+@media (min-width: 576px) {
+.es-pranie--10 {
+    &__single {
+        p {
+            font-size: 0.9rem;
+            height: 3rem;
+        }
+    }
+}
+}
+@media (min-width: 768px) {
+.es-pranie--10 {
+    &__single {
+        p {
+            height: 3.8rem;
+        }
+    }
+}
+}
+/** calgon **/
+.es-pranie--11 {
+    background-image: url("../images/calgon-bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Metropolis-Black";
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    &__logo {
+        max-width: 150px;
+    }
+    &__header {
+        margin-block: 0.5rem;
+        color: white;
+    }
+    &__pack {
+        scale: 1;
+        transition: all 200ms ease-in-out;
+        min-width: 250px;
+        &:hover {
+            scale: 1.05;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .es-pranie--11 {
+        background-position: right;
+        &__header {
+            font-size: 1.2rem;
+        }
+    }
+}
+@media (min-width: 800px) {
+    .es-pranie--11 {
+        min-height: 280px;
+        &__logo {
+            max-width: 200px;
+            margin-bottom: 2rem;
+        }
+        &__pack {
+            position: absolute;
+            bottom: 0;
+            max-width: 302px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .es-pranie--11 {
+        min-height: 320px;
+        &__pack {
+            max-width: 350px;
+        }
+    }
+}
+
+.es-pranie--12 {
+    &__flexCtn {
+        row-gap: 5px;
+    }
+    &__single {
+
+        min-width: 130px;
+        max-width: 200px;
+        &:hover .es-pranie--12__img {
+            scale: 1.1;
+            -webkit-animation-name: bounce; 
+        animation-name: bounce;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s; 
+            -webkit-animation-fill-mode: both; 
+            animation-fill-mode: both; 
+        }
+        p {
+            text-transform: uppercase;
+            color: $es-color-navy-pranie;
+            margin-bottom: unset;
+            font-size: 0.8rem;
+            height: 2.2rem;
+        }
+    }
+    &__img {
+        max-width: 100px;
+        scale: 1;
+        transition: all 200ms ease-in-out;
+    }
+}
+@media (min-width: 576px) {
+.es-pranie--12 {
+    &__single {
+        p {
+            font-size: 0.9rem;
+            height: 3rem;
         }
     }
 }

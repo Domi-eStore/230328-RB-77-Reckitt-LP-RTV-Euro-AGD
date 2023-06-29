@@ -730,6 +730,33 @@ $es-color-gold: #e0c68c;
             }
         }
     }
+    .es-finish--5 {
+        &__header {
+            font-family: "Gotham-Book";
+            strong {
+                font-family: "Gotham-Black";
+            }
+        }
+        &__table {
+            color: white;
+        }
+        &__button {
+            background-color: #e0c68c;
+            color: white;
+            font-family: "Gotham-Black";
+            margin: auto;
+            display: block;
+            padding: 0.5rem;
+            text-align: center;
+            max-width: 120px;
+            &:hover {
+                background-color: #d4bb85;
+            }
+            &:active {
+                background-color: #bba576;
+            }
+        }
+    }
 
     /*******************************************************/
     /*********************** pranie ************************/

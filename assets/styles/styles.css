@@ -581,6 +581,31 @@
     max-width: unset;
   }
 }
+#es-rc #es-rc-content [data-es-rc] .es-finish--5__header {
+  font-family: "Gotham-Book";
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--5__header strong {
+  font-family: "Gotham-Black";
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
+  color: white;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--5__button {
+  background-color: #e0c68c;
+  color: white;
+  font-family: "Gotham-Black";
+  margin: auto;
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  max-width: 120px;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--5__button:hover {
+  background-color: #d4bb85;
+}
+#es-rc #es-rc-content [data-es-rc] .es-finish--5__button:active {
+  background-color: #bba576;
+}
 #es-rc #es-rc-content [data-es-rc] .es-pranie--1 {
   background-image: url("../images/bg-pranie-mobile.webp");
   background-size: cover;

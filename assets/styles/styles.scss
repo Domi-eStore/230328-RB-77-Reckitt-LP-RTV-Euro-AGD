@@ -731,6 +731,9 @@ $es-color-gold: #e0c68c;
         }
     }
     .es-finish--5 {
+        // background-image: url("../images/bg-table.webp");
+        background-size: cover;
+        background-position: center;
         &__header {
             font-family: "Gotham-Book";
             strong {
@@ -739,22 +742,146 @@ $es-color-gold: #e0c68c;
         }
         &__table {
             color: white;
+            background-image: url("../images/table-bg-blocks.webp");
+            background-size: 77% 100%;
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+        &__table-head--1 {
+            min-width: 194px;
+        }
+        &__table-head {
+            min-width: 130px;
+        }
+        &__table-img {
+            max-width: 90%;
+        }
+        &__table-txt {
+            color: white;
+            font-family: "Gotham-Book";
+            margin: 0;
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+        &__table-icon {
+            display: none;
+        }
+        &__table-row {
+            height: 2.5rem;
+            padding-left: 0.5rem;
+            background-color: #002D6F!important;
+            &--striped {
+                
+                height: 2.5rem;
+                padding-left: 0.5rem;
+            }
+        }
+        &__tr {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        &__table-dot {
+            &--1 {
+                color: #bba576;
+                background: -moz-linear-gradient(142deg,
+                rgba(224, 198, 140, 1) 0%,
+                rgba(242, 231, 180, 1) 47%,
+                rgba(201, 176, 117, 1) 100%);
+        background: -webkit-linear-gradient(142deg,
+                rgba(224, 198, 140, 1) 0%,
+                rgba(242, 231, 180, 1) 47%,
+                rgba(201, 176, 117, 1) 100%);
+        background: linear-gradient(142deg,
+                rgba(224, 198, 140, 1) 0%,
+                rgba(242, 231, 180, 1) 47%,
+                rgba(201, 176, 117, 1) 100%);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+            &--2 {
+                background-color: #002D6F;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+            &--3 {
+                background-color: white;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
         }
         &__button {
             background-color: #e0c68c;
             color: white;
             font-family: "Gotham-Black";
+            font-size: 0.9rem;
             margin: auto;
             display: block;
             padding: 0.5rem;
             text-align: center;
-            max-width: 120px;
+            max-width: 110px;
             &:hover {
                 background-color: #d4bb85;
             }
             &:active {
                 background-color: #bba576;
             }
+        }
+    }
+    @media (min-width: 768px) {
+        .es-finish--5 {
+            
+            &__table {
+            background-size: 73% 100%;    
+            }
+            &__table-head--1 {
+                min-width: 240px;
+            }
+            &__table-icon {
+                display: block;
+                max-width: 40px;
+            }
+        }
+    }
+    @media (min-width: 960px) {
+        .es-finish--5 {
+            &__table {
+             background-size: 74.5% 100%;   
+            }
+            
+        }
+    }
+    @media (min-width: 1000px) {
+        .es-finish--5 {
+            &__table {
+             background-size: 75% 100%;   
+            }
+            
+        }
+    }
+    @media (min-width: 1050px) {
+        .es-finish--5 {
+            &__table {
+             background-size: 76% 100%;   
+            }
+            
+        }
+    }
+    @media (min-width: 1100px) {
+        .es-finish--5 {
+            &__table {
+             background-size: 77% 100%;   
+            }
+            
+        }
+    }
+    @media (min-width: 1150px) {
+        .es-finish--5 {
+            &__table {
+             background-size: 78% 100%;   
+            }
+            
         }
     }
 

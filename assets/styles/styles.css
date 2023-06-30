@@ -598,7 +598,7 @@
 #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
   color: white;
   background-image: url("../images/table-bg-blocks.webp");
-  background-size: 77% 100%;
+  background-size: 77% 97%;
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -671,7 +671,7 @@
 }
 @media (min-width: 768px) {
   #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
-    background-size: 73% 100%;
+    background-size: 73% 97%;
   }
   #es-rc #es-rc-content [data-es-rc] .es-finish--5__table-head--1 {
     min-width: 240px;
@@ -683,37 +683,37 @@
 }
 @media (min-width: 960px) {
   #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
-    background-size: 74.5% 100%;
+    background-size: 74.5% 97%;
   }
 }
 @media (min-width: 1000px) {
   #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
-    background-size: 75% 100%;
+    background-size: 75% 96%;
   }
 }
 @media (min-width: 1050px) {
   #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
-    background-size: 76% 100%;
+    background-size: 76% 97%;
   }
 }
 @media (min-width: 1100px) {
   #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
-    background-size: 77% 102%;
+    background-size: 77% 98%;
   }
 }
 @media (min-width: 1130px) {
   #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
-    background-size: 77% 103%;
+    background-size: 77% 98%;
   }
 }
 @media (min-width: 1140px) {
   #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
-    background-size: 78% 102%;
+    background-size: 78% 99%;
   }
 }
 @media (min-width: 1190px) {
   #es-rc #es-rc-content [data-es-rc] .es-finish--5__table {
-    background-size: 78.5% 105%;
+    background-size: 78.5% 100%;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-pranie--1 {

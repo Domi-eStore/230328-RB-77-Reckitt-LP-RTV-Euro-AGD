@@ -757,10 +757,10 @@
 }
 @keyframes animateBubble {
   0% {
-    margin-top: 50%;
+    margin-top: 100%;
   }
   100% {
-    margin-top: -100%;
+    margin-top: -200%;
   }
 }
 @keyframes sideWays {
@@ -772,15 +772,9 @@
   }
 }
 #es-rc #es-rc-content [data-es-rc] .x1 {
-  animation: animateBubble 25s linear 1, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 15s linear 1, sideWays 3s ease-in-out infinite alternate;
   left: -5%;
   top: 5%;
-  transform: scale(0.6);
-}
-#es-rc #es-rc-content [data-es-rc] .x2 {
-  animation: animateBubble 20s linear 1, sideWays 4s ease-in-out infinite alternate;
-  left: 5%;
-  top: 80%;
   transform: scale(0.4);
 }
 #es-rc #es-rc-content [data-es-rc] .x3 {
@@ -795,41 +789,11 @@
   top: 0;
   transform: scale(0.3);
 }
-#es-rc #es-rc-content [data-es-rc] .x5 {
-  animation: animateBubble 29s linear 1, sideWays 4s ease-in-out infinite alternate;
-  left: 30%;
-  top: 50%;
-  transform: scale(0.5);
-}
 #es-rc #es-rc-content [data-es-rc] .x6 {
   animation: animateBubble 21s linear 1, sideWays 2s ease-in-out infinite alternate;
   left: 50%;
   top: 0;
   transform: scale(0.8);
-}
-#es-rc #es-rc-content [data-es-rc] .x7 {
-  animation: animateBubble 20s linear 1, sideWays 2s ease-in-out infinite alternate;
-  left: 65%;
-  top: 70%;
-  transform: scale(0.4);
-}
-#es-rc #es-rc-content [data-es-rc] .x8 {
-  animation: animateBubble 22s linear 2, sideWays 3s ease-in-out infinite alternate;
-  left: 80%;
-  top: 10%;
-  transform: scale(0.3);
-}
-#es-rc #es-rc-content [data-es-rc] .x9 {
-  animation: animateBubble 29s linear 1, sideWays 4s ease-in-out infinite alternate;
-  left: 90%;
-  top: 50%;
-  transform: scale(0.6);
-}
-#es-rc #es-rc-content [data-es-rc] .x10 {
-  animation: animateBubble 26s linear 1, sideWays 2s ease-in-out infinite alternate;
-  left: 80%;
-  top: 80%;
-  transform: scale(0.3);
 }
 #es-rc #es-rc-content [data-es-rc] .es-bubble {
   border-radius: 50%;

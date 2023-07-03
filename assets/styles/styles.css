@@ -188,13 +188,19 @@
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-main--tab__Ctn {
+    min-height: 250px;
+    aspect-ratio: unset;
+  }
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content [data-es-rc] .es-main--tab__Ctn {
     min-height: 300px;
     aspect-ratio: unset;
   }
 }
 @media (min-width: 992px) {
   #es-rc #es-rc-content [data-es-rc] .es-main--tab__Ctn {
-    min-height: 350px;
+    min-height: 400px;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--1 {

@@ -222,6 +222,14 @@ $es-color-gold: #e0c68c;
     @media (min-width: 576px) {
         .es-main--tab {
             &__Ctn {
+                min-height: 250px;
+                aspect-ratio: unset;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        .es-main--tab {
+            &__Ctn {
                 min-height: 300px;
                 aspect-ratio: unset;
             }
@@ -231,7 +239,7 @@ $es-color-gold: #e0c68c;
     @media (min-width: 992px) {
         .es-main--tab {
             &__Ctn {
-                min-height: 350px;
+                min-height: 400px;
             }
         }
     }

@@ -343,7 +343,7 @@
 #es-rc #es-rc-content [data-es-rc] .es-main--3__header h2 {
   position: relative;
   z-index: 2;
-  margin-left: -4rem;
+  margin-left: 0;
 }
 #es-rc #es-rc-content [data-es-rc] .es-main--3__header h2 em {
   color: #e41412;

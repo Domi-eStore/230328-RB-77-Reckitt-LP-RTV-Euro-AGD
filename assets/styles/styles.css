@@ -417,7 +417,8 @@
   font-size: 2.2rem;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__header span {
-  font-size: 2.6rem;
+  font-size: 2.7rem;
+  display: block;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--1__logo {
   max-height: 100px;
@@ -440,6 +441,9 @@
   }
   #es-rc #es-rc-content [data-es-rc] .es-finish--1__header strong {
     display: block;
+  }
+  #es-rc #es-rc-content [data-es-rc] .es-finish--1__logo {
+    margin-bottom: 3rem;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--2__flexCtn {
@@ -616,6 +620,7 @@
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--5__table-img {
   max-width: 90%;
+  max-height: 116px;
 }
 #es-rc #es-rc-content [data-es-rc] .es-finish--5__table-txt {
   color: white;
